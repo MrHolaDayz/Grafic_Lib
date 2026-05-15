@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#846 — Ряд Маклорена</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="846" class="card-full">
+    <div class="card-id">карточка #846</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Математический анализ</span> → <span>Ряды</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Ряд Маклорена — это частный случай ряда Тейлора, в котором разложение функции производится в окрестности нулевой точки, представляя её в виде суммы степеней переменной x с коэффициентами, равными значениям производных функции в нуле.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/829.html" class="card-link">Числовые ряды</a> <a href="/cards/830.html" class="card-link">Частичная сумма</a> <a href="/cards/831.html" class="card-link">Сходимость ряда</a> <a href="/cards/832.html" class="card-link">Необходимый признак сходимости</a> <a href="/cards/833.html" class="card-link">Гармонический ряд</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Ряд Маклорена для функции f(x) задаётся формулой: f(x) = f(0) + f'(0)x + f''(0)x^2/2! + f'''(0)x^3/3! + ... + f^(n)(0)x^n/n! + ... . Коэффициенты ряда вычисляются через производные в точке x=0. Ряд является степенным, и его <a href="/cards/830.html" class="card-link">Частичная сумма</a> S_n(x) = ∑_{k=0}^n f^(k)(0)x^k/k! даёт приближение функции многочленом степени n.
+
+Основное свойство ряда Маклорена заключается в том, что он позволяет представить бесконечно дифференцируемую функцию в виде сходящегося степенного ряда в некоторой окрестности нуля. Например, для экспоненты: e^x = 1 + x + x^2/2! + x^3/3! + ... , а для синуса: sin x = x - x^3/3! + x^5/5! - ... . Важно проверять <a href="/cards/831.html" class="card-link">Сходимость ряда</a>: для одних функций (как e^x) ряд сходится при всех x, для других — только в ограниченном интервале (например, ln(1+x) сходится при |x|<1). <a href="/cards/832.html" class="card-link">Необходимый признак сходимости</a> требует, чтобы общий член ряда стремился к нулю, но этого недостаточно — например, <a href="/cards/833.html" class="card-link">Гармонический ряд</a> расходится, хотя его члены стремятся к нулю.
+
+Ряд Маклорена широко применяется в численных методах, физике и инженерии для аппроксимации сложных функций простыми многочленами, при вычислении пределов и интегралов, а также в теории дифференциальных уравнений. Связанные темы включают <a href="/cards/829.html" class="card-link">Числовые ряды</a> (изучают сходимость сумм чисел), частичную сумму (конечное приближение ряда) и сходимость ряда (условия, при которых сумма ряда стремится к конечному пределу). Понимание ряда Маклорена опирается на общую теорию степенных рядов и методы оценки остатка.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

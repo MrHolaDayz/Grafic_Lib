@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#58 — Решето Сундарама</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="58" class="card-full">
+    <div class="card-id">карточка #58</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Арифметика</span> → <span>Делимость</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Решето Сундарама — это метод отбора нечётных простых чисел путём исключения из натурального ряда всех чисел, представимых в виде i + j + 2ij (где i и j — натуральные числа), с последующим пересчётом оставшихся чисел в простые по формуле 2n + 1.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1166.html" class="card-link">Простые числа</a> <a href="/cards/1171.html" class="card-link">Китайская теорема об остатках</a> <a href="/cards/1172.html" class="card-link">Функция Эйлера</a> <a href="/cards/35.html" class="card-link">Признаки делимости на 2</a> <a href="/cards/36.html" class="card-link">на 3</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Решето Сундарама — алгоритм для нахождения всех простых чисел, альтернативный классическому решету Эратосфена. Оно работает только с нечётными числами. Основная идея: все составные нечётные числа можно представить в виде 2(i + j + 2ij) + 1, что эквивалентно утверждению, что число N = 2n + 1 является составным тогда и только тогда, когда n представимо в форме i + j + 2ij для некоторых натуральных i, j (i ≥ 1, j ≥ i). Таким образом, алгоритм строит таблицу чисел от 1 до некоторого предела, вычёркивает все числа вида i + j + 2ij, а затем каждое оставшееся число n преобразует в простое p = 2n + 1. Например, для n = 1 получаем p = 3 (простое), для n = 2 — p = 5, для n = 4 — p = 9, но 9 — составное, так как 4 = 1 + 1 + 2*1*1, поэтому 4 вычеркивается. Формула для проверки: если n = i + j + 2ij, то p = 2n + 1 = (2i+1)(2j+1), что явно является произведением двух нечётных чисел.
+
+Свойства решета Сундарама: оно требует меньше памяти, чем решето Эратосфена (поскольку работает с половиной чисел), но даёт только нечётные <a href="/cards/1166.html" class="card-link">Простые числа</a> (число 2 необходимо добавить отдельно). Пример: для предела n ≤ 10 (то есть p ≤ 21) список чисел n: 1,2,3,4,5,6,7,8,9,10. Вычёркиваем n, представимые как i + j + 2ij: (i=1,j=1) → 1+1+2=4; (1,2) → 1+2+4=7; (1,3) → 1+3+6=10; (2,2) → 2+2+8=12 (больше 10). Остаются n = 1,2,3,5,6
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

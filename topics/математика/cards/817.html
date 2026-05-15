@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#817 — Линейные уравнения первого порядка</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="817" class="card-full">
+    <div class="card-id">карточка #817</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Математический анализ</span> → <span>Дифференциальные уравнения</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Линейные уравнения первого порядка — это дифференциальные уравнения вида y’ + p(x)y = q(x), где y — искомая функция, а p(x) и q(x) — заданные непрерывные функции. Они называются линейными, так как искомая функция и её производная входят в уравнение в первой степени.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1006.html" class="card-link">Отношение порядка</a> <a href="/cards/1043.html" class="card-link">Квадратные уравнения</a> <a href="/cards/1044.html" class="card-link">Кубические уравнения</a> <a href="/cards/1090.html" class="card-link">Общее решение</a> <a href="/cards/1091.html" class="card-link">Частное решение</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Линейные уравнения первого порядка имеют стандартную форму: y’ + p(x)y = q(x). Основной метод решения — метод вариации произвольной постоянной или использование интегрирующего множителя μ(x) = e^(∫p(x)dx). <a href="/cards/1090.html" class="card-link">Общее решение</a> записывается как y = (1/μ(x)) * ∫(μ(x)q(x)dx) + C/μ(x), где C — произвольная постоянная. Если задано начальное условие y(x₀) = y₀, то получают <a href="/cards/1091.html" class="card-link">Частное решение</a>.
+
+Свойства: уравнение остаётся линейным при замене y на y + const, а его решение можно представить как сумму общего решения однородного уравнения (y’ + p(x)y = 0) и частного решения неоднородного. Пример: уравнение y’ + 2xy = x решается интегрирующим множителем μ = e^(x^2), что даёт y = 1/2 + Ce^(-x^2). Если же q(x) = 0, уравнение называется однородным и решается разделением переменных.
+
+Линейные уравнения первого порядка широко применяются в физике (законы охлаждения, RC-цепи), биологии (модели роста популяций) и экономике (накопление капитала). Они связаны с квадратными и кубическими уравнениями через задачи, где p(x) или q(x) являются многочленами второй или третьей степени. Например, при p(x) = 2x и q(x) = x^2 решение требует интегрирования, приводящего к полиномиальным выражениям. <a href="/cards/1006.html" class="card-link">Отношение порядка</a> проявляется в том, что линейные уравнения первого порядка — простейший класс дифференциальных уравнений, где порядок производной равен единице, что отличает их от уравнений высших порядков.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

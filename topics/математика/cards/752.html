@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#752 — Наименьшее значение на отрезке</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="752" class="card-full">
+    <div class="card-id">карточка #752</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Математический анализ</span> → <span>Применение производной</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Наименьшее значение функции на отрезке — это минимальное значение, которое функция принимает на заданном замкнутом интервале, достигаемое либо в критических точках (где производная равна нулю или не существует), либо на границах отрезка.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1027.html" class="card-link">Главное значение аргумента</a> <a href="/cards/1048.html" class="card-link">Поворот на комплексной плоскости</a> <a href="/cards/1063.html" class="card-link">Умножение матрицы на число</a> <a href="/cards/1110.html" class="card-link">Умножение на число</a> <a href="/cards/1174.html" class="card-link">Теорема Ферма</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Наименьшее значение функции f(x) на отрезке [a, b] определяется как min{f(x) : x ∈ [a, b]}. Для его нахождения используется алгоритм: найти производную f'(x), приравнять её к нулю и найти критические точки (x1, x2, ...), принадлежащие отрезку. Затем вычислить значения функции в этих точках и на концах отрезка f(a) и f(b). Наименьшее из полученных чисел и будет искомым значением. Формально: min_{x∈[a,b]} f(x) = min{ f(a), f(b), f(x1), f(x2), ... }.
+
+Свойства: если функция непрерывна на отрезке, то наименьшее значение всегда существует (теорема Вейерштрасса). Если функция возрастает на всём отрезке, то минимум достигается в левом конце; если убывает — в правом. Пример: для f(x) = x^2 на отрезке [-1, 2] производная f'(x) = 2x = 0 даёт точку x=0. Значения: f(-1)=1, f(0)=0, f(2)=4 → наименьшее значение равно 0.
+
+Метод применяется в задачах оптимизации, физике (нахождение минимальной энергии), экономике (минимизация издержек). Связанные темы: <a href="/cards/1174.html" class="card-link">Теорема Ферма</a> утверждает, что в точках локального экстремума производная равна нулю (если она существует). <a href="/cards/1063.html" class="card-link">Умножение матрицы на число</a> и <a href="/cards/1110.html" class="card-link">Умножение на число</a> — линейные операции, которые могут масштабировать функцию, смещая её минимум, но не меняя положение критических точек. <a href="/cards/1048.html" class="card-link">Поворот на комплексной плоскости</a> и <a href="/cards/1027.html" class="card-link">Главное значение аргумента</a> используются при анализе функций комплексного переменного, где поиск минимума модуля или аргумента аналогичен нахождению наименьшего значения действительной функции.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

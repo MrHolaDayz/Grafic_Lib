@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#1098 — Сумма подпространств</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="1098" class="card-full">
+    <div class="card-id">карточка #1098</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Линейная алгебра</span> → <span>Линейные пространства</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Сумма подпространств — это множество всех векторов, которые можно представить в виде суммы векторов из данных подпространств; это наименьшее подпространство, содержащее все исходные.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1092.html" class="card-link">Векторное пространство</a> <a href="/cards/1093.html" class="card-link">Базис</a> <a href="/cards/1094.html" class="card-link">Размерность</a> <a href="/cards/1095.html" class="card-link">Линейная зависимость</a> <a href="/cards/1096.html" class="card-link">Линейная независимость</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    **Определение и основные формулы.** Пусть U и W — подпространства векторного пространства V. Их суммой называется множество U + W = { u + w | u ∈ U, w ∈ W }. Сумма сама является подпространством V. Если U ∩ W = {0}, то сумма называется прямой и обозначается U ⊕ W. Для прямой суммы каждый вектор из U ⊕ W единственным образом представляется как u + w. <a href="/cards/1094.html" class="card-link">Размерность</a> суммы вычисляется по формуле Грассмана: dim(U + W) = dim(U) + dim(W) − dim(U ∩ W). Для прямой суммы: dim(U ⊕ W) = dim(U) + dim(W).
+
+**Свойства и примеры.** Сумма подпространств ассоциативна и коммутативна. Пример: в пространстве R^3 возьмем U — плоскость (x, y, 0) и W — ось z (0, 0, z). Их пересечение — нулевой вектор, поэтому R^3 = U ⊕ W. Если же U — ось x, а W — ось y, то их сумма — плоскость xy, пересечение — ноль, снова прямая сумма. Если U и W — две плоскости в R^3, пересекающиеся по прямой, то их сумма — всё пространство R^3, причем dim(U + W) = 2 + 2 − 1 = 3.
+
+**Применение и связь с другими темами.** Сумма подпространств используется при разложении пространства на независимые компоненты (например, в спектральной теории, при решении систем линейных уравнений, в анализе Фурье). Понятие тесно связано с <a href="/cards/1093.html" class="card-link">Базис</a>ом: если пространство разложено в прямую сумму, то объединение базисов слагаемых дает базис суммы. Размерность суммы вычисляется через размерности слагаемых и их пересечения. Связанные темы: <a href="/cards/1092.html" class="card-link">Векторное пространство</a> (основное понятие), Базис (для построения суммы), Размерность (формула Грассмана).
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#119 — Бином Ньютона</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="119" class="card-full">
+    <div class="card-id">карточка #119</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Алгебра</span> → <span>Выражения</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Бином Ньютона — это формула для разложения степени суммы двух чисел (a + b)^n в многочлен, где коэффициентами разложения выступают биномиальные коэффициенты (числа сочетаний).
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <span style="color:#3d5065;">нет связей</span>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Бином Ньютона обобщает правило возведения двучлена в натуральную степень n. Формула имеет вид: (a + b)^n = C(n,0)*a^n + C(n,1)*a^(n-1)*b + C(n,2)*a^(n-2)*b^2 + ... + C(n,n-1)*a*b^(n-1) + C(n,n)*b^n, где C(n,k) = n! / (k! * (n-k)!) — биномиальный коэффициент, равный числу сочетаний из n по k. Сумму всех членов можно компактно записать через знак суммы: (a + b)^n = Σ (от k=0 до n) C(n,k) * a^(n-k) * b^k. Частный случай при a = 1, b = x даёт (1 + x)^n.
+
+Основное свойство биномиальных коэффициентов — их симметрия: C(n,k) = C(n, n-k). Также они подчиняются правилу Паскаля: C(n,k) + C(n, k+1) = C(n+1, k+1), что лежит в основе построения треугольника Паскаля, где каждый коэффициент равен сумме двух стоящих над ним. Пример: (x + y)^3 = C(3,0)*x^3 + C(3,1)*x^2*y + C(3,2)*x*y^2 + C(3,3)*y^3 = x^3 + 3x^2*y + 3x*y^2 + y^3.
+
+Бином Ньютона широко применяется в комбинаторике (подсчёт числа подмножеств), теории вероятностей (формула Бернулли), математическом анализе (разложение функций в ряды, например, (1 + x)^n при дробном n). Связанные темы: треугольник Паскаля, сочетания, разложение многочленов, формула суммы геометрической прогрессии.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

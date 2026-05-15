@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#1082 — Однородные системы</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="1082" class="card-full">
+    <div class="card-id">карточка #1082</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Линейная алгебра</span> → <span>Системы линейных уравнений</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Однородные системы — это системы линейных уравнений, в которых все свободные члены равны нулю. Они всегда совместны, так как имеют тривиальное (нулевое) решение, и их исследование сводится к анализу ранга матрицы.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1083.html" class="card-link">Неоднородные системы</a> <a href="/cards/1084.html" class="card-link">Метод Крамера</a> <a href="/cards/1085.html" class="card-link">Матричный метод</a> <a href="/cards/1086.html" class="card-link">Метод Гаусса</a> <a href="/cards/1087.html" class="card-link">Метод Гаусса-Жордана</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Однородная система линейных уравнений имеет вид A·x = 0, где A — матрица размера m×n, x — столбец неизвестных. В развернутой форме: a_11·x_1 + a_12·x_2 + ... + a_1n·x_n = 0, ..., a_m1·x_1 + a_m2·x_2 + ... + a_mn·x_n = 0. Фундаментальная система решений (ФСР) состоит из n − r линейно независимых решений, где r = rank(A). Общее решение записывается как линейная комбинация этих решений: x = C_1·v_1 + C_2·v_2 + ... + C_{n−r}·v_{n−r}, где C_i — произвольные постоянные.
+
+Ключевое свойство: если x и y — решения однородной системы, то их линейная комбинация также является решением (принцип суперпозиции). Пример: система {x + 2y = 0, 3x + 6y = 0} имеет ранг 1, поэтому ФСР состоит из одного вектора, например, v = (−2, 1). Общее решение: (x, y) = C·(−2, 1). Если ранг матрицы равен числу неизвестных, система имеет только тривиальное решение x = 0.
+
+Однородные системы широко применяются в анализе линейных операторов, дифференциальных уравнениях и задачах на собственные значения. Связь с другими темами: решение неоднородной системы A·x = b находится как сумма частного решения и общего решения соответствующей однородной системы. <a href="/cards/1084.html" class="card-link">Метод Крамера</a> применим только к квадратным однородным системам с ненулевым определителем (дает нулевое решение), а в случае нулевого определителя используется <a href="/cards/1085.html" class="card-link">Матричный метод</a> или <a href="/cards/1086.html" class="card-link">Метод Гаусса</a>. <a href="/cards/1087.html" class="card-link">Метод Гаусса-Жордана</a> позволяет привести матрицу к ступенчатому виду и найти ФСР.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

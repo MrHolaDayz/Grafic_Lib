@@ -1,0 +1,32 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  background: #0a0e14;
+  color: #c8ccd4;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-image: linear-gradient(rgba(30,40,55,0.25) 1px, transparent 1px), linear-gradient(90deg, rgba(30,40,55,0.25) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+.card-full { background: #141b24; border: 1px solid #2c3745; border-radius: 1.5rem; max-width: 800px; width: 100%; padding: 2.5rem; box-shadow: 0 20px 50px rgba(0,0,0,0.7); }
+.card-id { font-size: 0.8rem; color: #60758b; text-transform: uppercase; letter-spacing: 1px; }
+.card-title { font-size: 2rem; font-weight: 700; color: #d9e2ec; margin: 0.5rem 0 1.5rem; border-bottom: 2px solid #232f3c; padding-bottom: 1rem; }
+.breadcrumbs { display: flex; gap: 0.3rem; flex-wrap: wrap; margin-bottom: 1.5rem; font-size: 0.7rem; }
+.breadcrumbs a { color: #4a607a; text-decoration: none; }
+.breadcrumbs a:hover { color: #8aa0bd; }
+.breadcrumbs span { color: #3d5065; }
+.section-title { font-size: 0.7rem; color: #4a607a; text-transform: uppercase; letter-spacing: 1px; margin: 1.5rem 0 0.6rem; }
+.pref-text, .main-text { font-size: 0.9rem; line-height: 1.7; color: #a8b7c9; background: #0f151d; padding: 1rem 1.2rem; border-radius: 0.8rem; border: 1px solid #1e2a35; }
+.main-text p { margin-bottom: 0.7rem; }
+.main-text strong { color: #d9e2ec; }
+.main-text .formula { color: #b8a45e; font-style: italic; }
+a.card-link { color: #5e8ab4; text-decoration: none; font-weight: 600; border-bottom: 1px dashed #5e8ab4; }
+a.card-link:hover { color: #8ab8e0; background: rgba(94,138,180,0.1); }
+.back-link { display: inline-block; margin-top: 2rem; color: #4a607a; text-decoration: none; font-size: 0.8rem; }
+.back-link:hover { color: #8aa0bd; }
+.links-list { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.8rem 0; }
+.links-list a { background: #1a2532; border: 1px solid #2a3a4e; padding: 0.25rem 0.7rem; border-radius: 0.4rem; color: #8aa0bd; text-decoration: none; font-size: 0.75rem; }
+.links-list a:hover { background: #243548; border-color: #4a6d90; color: #b8d0f0; }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#779 — Непосредственное интегрирование</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="779" class="card-full">
+    <div class="card-id">карточка #779</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Математический анализ</span> → <span>Интегралы</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Непосредственное интегрирование — это метод нахождения неопределенного интеграла, основанный на прямом применении таблицы основных интегралов и свойств линейности интеграла, без использования сложных подстановок или преобразований.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/769.html" class="card-link">Первообразная</a> <a href="/cards/770.html" class="card-link">Определение первообразной</a> <a href="/cards/771.html" class="card-link">Основное свойство первообразной</a> <a href="/cards/772.html" class="card-link">Неопределенный интеграл</a> <a href="/cards/773.html" class="card-link">Свойства неопределенного интеграла</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Непосредственное интегрирование представляет собой простейший способ вычисления неопределенного интеграла, при котором подынтегральное выражение уже имеет вид, совпадающий с одной из табличных формул, или легко приводится к такому виду с помощью алгебраических преобразований. Основой метода служит таблица интегралов от элементарных функций, например: ∫x^n dx = x^(n+1)/(n+1) + C (n ≠ -1), ∫dx/x = ln|x| + C, ∫e^x dx = e^x + C, ∫sin x dx = -cos x + C, ∫cos x dx = sin x + C, ∫dx/(√(1-x^2)) = arcsin x + C и другие. Ключевой принцип — использовать производные известных функций в обратном порядке.
+
+Метод опирается на два основных <a href="/cards/773.html" class="card-link">Свойства неопределенного интеграла</a>: линейность (∫(f(x) ± g(x)) dx = ∫f(x)dx ± ∫g(x)dx) и вынесение постоянного множителя (∫k·f(x)dx = k·∫f(x)dx). Пример: ∫(3x^2 + 2/x - 5) dx = 3∫x^2 dx + 2∫dx/x - 5∫dx = 3·(x^3/3) + 2·ln|x| - 5x + C = x^3 + 2ln|x| - 5x + C. Другой пример: ∫(2cos x - 3e^x) dx = 2∫cos x dx - 3∫e^x dx = 2 sin x - 3e^x + C. Важно помнить, что результат всегда содержит произвольную постоянную C.
+
+Непосредственное интегрирование широко применяется как начальный этап в решении более сложных задач: при вычислении определенных интегралов, при решении дифференциальных уравнений, в физике для нахождения пути по скорости или работы по силе. Этот метод тесно связан с понятием первообразной: процесс интегрирования восстанавливает функцию по ее производной. Связь с другими темами проявляется через <a href="/cards/770.html" class="card-link">Определение первообразной</a> (функция F(x) называется первообразной для f(x), если F'(x)=f(x)), <a href="/cards/771.html" class="card-link">Основное свойство первообразной</a> (если F(x) — <a href="/cards/769.html" class="card-link">Первообразная</a>, то F(x)+C — тоже первообразная, и других нет), а также через неопределенный интегра
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

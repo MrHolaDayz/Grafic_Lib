@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#913 — Свойства дисперсии</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="913" class="card-full">
+    <div class="card-id">карточка #913</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Комбинаторика и вероятность</span> → <span>Теория вероятностей</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Дисперсия — это мера разброса случайной величины относительно её математического ожидания, показывающая, насколько в среднем значения отклоняются от центра.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1021.html" class="card-link">Свойства сопряженных чисел</a> <a href="/cards/1025.html" class="card-link">Свойства модуля</a> <a href="/cards/1061.html" class="card-link">Свойства транспонирования</a> <a href="/cards/1065.html" class="card-link">Свойства операций</a> <a href="/cards/1067.html" class="card-link">Свойства определителя</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Дисперсия случайной величины X определяется как математическое ожидание квадрата отклонения X от её математического ожидания: D(X) = M[(X - M(X))^2]. На практике часто используют формулу D(X) = M(X^2) - (M(X))^2, которая удобнее для вычислений. Для дискретной величины с конечным числом значений дисперсия равна сумме произведений квадратов отклонений на соответствующие вероятности.
+
+Основные свойства дисперсии включают: D(C) = 0 для постоянной C; D(CX) = C^2 * D(X) для константы C; D(X + Y) = D(X) + D(Y) для независимых случайных величин. Если величины зависимы, то D(X + Y) = D(X) + D(Y) + 2cov(X,Y), где cov — ковариация. Пример: для игральной кости с равномерным распределением M(X)=3.5, M(X^2)=15.167, тогда D(X)≈2.917.
+
+Дисперсия широко применяется в статистике для оценки точности измерений, в финансовой математике для измерения риска, в машинном обучении для анализа ошибок моделей. Она связана со стандартным отклонением σ = √D(X), которое имеет ту же размерность, что и исходная величина. Понимание свойств дисперсии необходимо при работе с корреляцией и регрессионным анализом.
+
+Среди связанных тем: <a href="/cards/1021.html" class="card-link">Свойства сопряженных чисел</a> (используются при работе с комплексными случайными величинами), <a href="/cards/1025.html" class="card-link">Свойства модуля</a> (модуль разности связан с отклонением), <a href="/cards/1061.html" class="card-link">Свойства транспонирования</a> (применимы к ковариационным матрицам). Эти понятия помогают обобщать дисперсию на многомерные случаи и комплексные пространства.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

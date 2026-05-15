@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#876 — Числа Стирлинга второго рода</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="876" class="card-full">
+    <div class="card-id">карточка #876</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Комбинаторика и вероятность</span> → <span>Комбинаторика</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Числа Стирлинга второго рода, обозначаемые S(n,k) или {n \choose k}, подсчитывают количество способов разбить множество из n элементов на k непустых неупорядоченных подмножеств.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1020.html" class="card-link">Сопряженные числа</a> <a href="/cards/1024.html" class="card-link">Модуль комплексного числа</a> <a href="/cards/1026.html" class="card-link">Аргумент комплексного числа</a> <a href="/cards/1047.html" class="card-link">Комплексные числа в геометрии</a> <a href="/cards/1144.html" class="card-link">Общее уравнение кривой второго порядка</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Числа Стирлинга второго рода S(n,k) определяются для целых n >= 0 и k >= 0 как количество разбиений n-элементного множества ровно на k непустых блоков. По определению, S(n,0) = 0 при n > 0, S(0,0) = 1, и S(n,k) = 0 при k > n. Основная рекуррентная формула: S(n,k) = k * S(n-1,k) + S(n-1,k-1). Также существует явная формула через сумму: S(n,k) = (1/k!) * sum_{i=0}^{k} (-1)^{k-i} * C(k,i) * i^n, где C(k,i) — биномиальный коэффициент.
+
+Свойства: S(n,k) положительны для 1 <= k <= n. Имеют место частные значения: S(n,1) = 1, S(n,n) = 1, S(n,n-1) = C(n,2). Производящая функция: (e^x - 1)^k / k! = sum_{n=k}^{∞} S(n,k) * x^n / n!. Пример: разбить множество из 4 элементов {a,b,c,d} на 2 блока. S(4,2) = 7. Возможные разбиения: {a}{bcd}, {b}{acd}, {c}{abd}, {d}{abc}, {ab}{cd}, {ac}{bd}, {ad}{bc}.
+
+Числа Стирлинга второго рода широко применяются в комбинаторике (подсчет разбиений, сюръективных функций), в теории вероятностей (моменты распределений), в теории чисел (связь с числами Белла: B_n = sum_{k=0}^{n} S(n,k)). Они связаны с числами Стирлинга первого рода через взаимно обратные матрицы. В контексте комплексных чисел эти числа могут появляться в разложениях полиномов с комплексными коэффициентами, где используются такие понятия, как <a href="/cards/1020.html" class="card-link">Сопряженные числа</a> (для вещественных корней), <a href="/cards/1024.html" class="card-link">Модуль комплексного числа</a> (для оценки величины коэффициентов) и <a href="/cards/1026.html" class="card-link">Аргумент комплексного числа</a> (при анализе фазовых соотношений в производящих функциях).
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#882 — Субфакториал</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="882" class="card-full">
+    <div class="card-id">карточка #882</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Комбинаторика и вероятность</span> → <span>Комбинаторика</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Субфакториал числа n (обозначается !n) — это количество перестановок n элементов, в которых ни один элемент не остаётся на своём исходном месте (беспорядки).
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/859.html" class="card-link">Правило суммы</a> <a href="/cards/860.html" class="card-link">Правило произведения</a> <a href="/cards/861.html" class="card-link">Факториал</a> <a href="/cards/862.html" class="card-link">Двойной факториал</a> <a href="/cards/863.html" class="card-link">Перестановки</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Суб<a href="/cards/861.html" class="card-link">Факториал</a> — комбинаторная функция, определяющая число перестановок без неподвижных точек (беспорядков). Основная формула: !n = n! * Σ_{k=0}^{n} ((-1)^k / k!). Также используется рекуррентное соотношение: !n = (n-1) * (!(n-1) + !(n-2)), с начальными значениями !0 = 1 и !1 = 0. Ещё один вид: !n = floor(n! / e + 1/2), где e — основание натурального логарифма.
+
+Свойства: субфакториал растёт медленнее факториала, но асимптотически !n ~ n! / e. Пример: для n=3 все <a href="/cards/863.html" class="card-link">Перестановки</a> из 3 элементов: 123, 132, 213, 231, 312, 321. Из них беспорядками являются только 231 и 312, поэтому !3 = 2. Для n=4: !4 = 9.
+
+Применяется в задачах о рассылке писем в неверные конверты, в теории вероятностей при вычислении вероятности того, что случайная перестановка не имеет неподвижных точек. Связан с факториалом через округление n!/e, а также с правилом суммы и произведения при выводе рекуррентной формулы: выбор элемента для обмена и комбинирование двух случаев (обмен с фиксированным элементом или нет).
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#917 — Плотность распределения</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="917" class="card-full">
+    <div class="card-id">карточка #917</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Комбинаторика и вероятность</span> → <span>Теория вероятностей</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    <a href="/cards/75.html" class="card-link">Плотность</a> распределения — это функция, описывающая вероятность того, что значение непрерывной случайной величины попадет в бесконечно малый интервал. Она является аналогом вероятности для дискретных величин и определяется как производная функции распределения.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/75.html" class="card-link">Плотность</a> <a href="/cards/883.html" class="card-link">Случайные события</a> <a href="/cards/884.html" class="card-link">Достоверные события</a> <a href="/cards/885.html" class="card-link">Невозможные события</a> <a href="/cards/886.html" class="card-link">Классическое определение вероятности</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    <a href="/cards/75.html" class="card-link">Плотность</a> распределения (или функция плотности вероятности) для непрерывной случайной величины X определяется как f(x) = F'(x), где F(x) — функция распределения. Вероятность попадания X в интервал [a, b] вычисляется как интеграл от плотности: P(a ≤ X ≤ b) = ∫ от a до b f(x) dx. Основное условие: интеграл от -∞ до +∞ f(x) dx = 1, что отражает достоверность полного пространства событий.
+
+Свойства плотности: f(x) ≥ 0 для всех x, и она может принимать значения больше 1 (в отличие от вероятности). Пример: равномерное распределение на отрезке [0, 1] имеет плотность f(x) = 1, а нормальное распределение — f(x) = 1/(σ√(2π)) * e^(-(x-μ)^2/(2σ^2)). Плотность не является вероятностью сама по себе — вероятность получить точное значение для непрерывной величины всегда равна 0, так как это невозможно событие.
+
+Плотность распределения широко применяется в статистике, физике и машинном обучении для моделирования случайных процессов. Она тесно связана с понятием плотности как меры концентрации вероятности и с классическим определением вероятности, которое обобщается на непрерывный случай через интегралы. <a href="/cards/883.html" class="card-link">Случайные события</a> в этом контексте описываются интервалами, а <a href="/cards/884.html" class="card-link">Достоверные события</a> — всем пространством, где плотность интегрируется в 1. <a href="/cards/885.html" class="card-link">Невозможные события</a> имеют нулевую вероятность, что соответствует точкам с нулевой плотностью или интегралу по пустому множеству.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

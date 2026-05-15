@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>граф · математические карточки</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="loading" id="loading">
+    <div class="loading-spinner"></div>
+    <span>загрузка данных...</span>
+  </div>
+
+  <div class="app-container" id="appContainer" style="display:none;">
+    <header class="header">
+      <div class="header-left">
+        <div class="header-title">⚡ граф связей</div>
+        <!-- Topic switcher -->
+        <div class="topic-switcher" id="topicSwitcher">
+          <button class="topic-current" id="topicCurrentBtn">
+            <span id="topicCurrentName">загрузка...</span>
+            <span class="topic-arrow">▾</span>
+          </button>
+          <div class="topic-dropdown" id="topicDropdown">
+            <div class="topic-dropdown-header">темы</div>
+            <div class="topic-list" id="topicList"></div>
+            <div class="topic-hint">+ новая: python create_topic.py</div>
+          </div>
+        </div>
+      </div>
+      <div class="controls">
+        <div class="search-wrap">
+          <input class="search-input" id="searchInput" type="text" placeholder="поиск по названию..." autocomplete="off" spellcheck="false">
+          <button class="search-clear" id="searchClear" title="очистить">✕</button>
+          <div class="search-results" id="searchResults"></div>
+        </div>
+        <label class="hide-others-wrap" id="searchHideWrap" style="display:none;">
+          <input type="checkbox" id="searchHideChk">
+          <span class="hide-others-label">скрыть остальные <span class="search-count-badge" id="searchCountBadge">0</span></span>
+        </label>
+        <div class="divider"></div>
+        <button class="btn btn-icon" id="refreshBtn" title="обновить данные">⟳</button>
+        <!-- divider и field-filters временно скрыты — фильтрация по типу связи будет переработана -->
+        <div class="field-filters" style="display:none;">
+          <button class="filter-btn active" data-field="all">все</button>
+          <button class="filter-btn" data-field="teorems">теоремы</button>
+          <button class="filter-btn" data-field="usein">usein</button>
+          <button class="filter-btn" data-field="chapter">chapter</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="graph-wrapper" id="graphWrapper">
+      <canvas id="arrowsCanvas"></canvas>
+      <svg class="arrows-layer" id="arrowsSvg" xmlns="http://www.w3.org/2000/svg">
+        <defs id="markersDefs"></defs>
+      </svg>
+      <div class="cards-layer" id="cardsLayer"></div>
+    </div>
+  </div>
+
+  <div class="card-tooltip" id="cardTooltip"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#1039 — Извлечение корня</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="1039" class="card-full">
+    <div class="card-id">карточка #1039</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Комплексные числа</span> → <span>Действия</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Извлечение корня n-й степени из комплексного числа — это операция, обратная возведению в степень, результатом которой является n различных комплексных чисел, равномерно расположенных на окружности.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1033.html" class="card-link">Сложение</a> <a href="/cards/1034.html" class="card-link">Вычитание</a> <a href="/cards/1035.html" class="card-link">Умножение</a> <a href="/cards/1036.html" class="card-link">Деление</a> <a href="/cards/1037.html" class="card-link">Возведение в степень</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Извлечение корня n-й степени из комплексного числа z — это нахождение всех таких комплексных чисел w, что w^n = z. Если представить число z в тригонометрической форме: z = r * (cos φ + i sin φ), то все корни n-й степени находятся по формуле: w_k = √[n]{r} * (cos((φ + 2πk)/n) + i sin((φ + 2πk)/n)), где k = 0, 1, ..., n-1. Здесь √[n]{r} — арифметический корень из модуля r. Например, корни квадратные из 1 (z=1, r=1, φ=0) дают два значения: w₀=1 и w₁=-1. Для кубического корня из 1 (n=3) получаются три точки: 1, -1/2 + i√3/2 и -1/2 - i√3/2.
+
+Основное свойство: все n корней имеют одинаковый модуль √[n]{r} и отличаются только аргументами, которые образуют арифметическую прогрессию с шагом 2π/n. Геометрически эти точки лежат на окружности радиуса √[n]{r} и являются вершинами правильного n-угольника. Важно: в отличие от вещественных чисел, где корень четной степени из отрицательного числа не существует, в комплексной плоскости он всегда существует и дает n различных значений.
+
+Эта операция широко применяется в теории функций комплексного переменного, при решении алгебраических уравнений (например, x^n = a) и в электротехнике при анализе цепей переменного тока. Извлечение корня тесно связано с возведением в степень (обратная операция). <a href="/cards/1033.html" class="card-link">Сложение</a> и <a href="/cards/1034.html" class="card-link">Вычитание</a> комплексных чисел используются для проверки результатов (сумма всех корней n-й степени из числа z равна нулю при n>1), а <a href="/cards/1035.html" class="card-link">Умножение</a> и <a href="/cards/1036.html" class="card-link">Деление</a> помогают при переходе между алгебраической и тригонометрической формами записи.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

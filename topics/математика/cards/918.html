@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#918 — Функция распределения</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="918" class="card-full">
+    <div class="card-id">карточка #918</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Комбинаторика и вероятность</span> → <span>Теория вероятностей</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Функция распределения — это функция, задающая вероятность того, что случайная величина X примет значение, не превосходящее заданного числа x. Она является универсальным способом описания любого распределения вероятностей.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1172.html" class="card-link">Функция Эйлера</a> <a href="/cards/208.html" class="card-link">Линейная функция</a> <a href="/cards/209.html" class="card-link">Квадратичная функция</a> <a href="/cards/210.html" class="card-link">Степенная функция</a> <a href="/cards/212.html" class="card-link">Дробно-линейная функция</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Функция распределения случайной величины X определяется как F(x) = P(X ≤ x). Для дискретной случайной величины F(x) = Σ_{x_i ≤ x} p(x_i), где p(x_i) — вероятности отдельных значений. Для непрерывной случайной величины F(x) = ∫_{-∞}^{x} f(t) dt, где f(t) — плотность распределения. Основные свойства: F(x) не убывает, lim_{x→-∞} F(x) = 0, lim_{x→+∞} F(x) = 1, и она непрерывна справа.
+
+Важнейшие свойства: функция распределения всегда принимает значения от 0 до 1. Пример: для равномерного распределения на отрезке [a, b] функция F(x) = 0 при x < a, F(x) = (x-a)/(b-a) при a ≤ x ≤ b, F(x) = 1 при x > b. Для нормального распределения F(x) выражается через интеграл от функции Гаусса и не имеет простого аналитического вида. Функция распределения позволяет вычислять вероятности попадания в интервал: P(a < X ≤ b) = F(b) - F(a).
+
+Функция распределения применяется в статистике, теории надежности, финансовой математике (например, для расчета рисков) и машинном обучении. Она тесно связана с функциями, описывающими зависимость: <a href="/cards/208.html" class="card-link">Линейная функция</a> может служить моделью равномерного распределения (F(x) = kx + b на отрезке). <a href="/cards/209.html" class="card-link">Квадратичная функция</a> встречается в распределениях с параболической плотностью. <a href="/cards/1172.html" class="card-link">Функция Эйлера</a> φ(n) не имеет прямого отношения к вероятностям, но используется в комбинаторике для подсчета количества взаимно простых чисел, что важно в задачах с равномерным распределением на множествах. <a href="/cards/210.html" class="card-link">Степенная функция</a> и <a href="/cards/212.html" class="card-link">Дробно-линейная функция</a> могут описывать хвосты распределений (например, в законе Парето).
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

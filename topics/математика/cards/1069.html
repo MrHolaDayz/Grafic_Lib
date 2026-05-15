@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#1069 — Алгебраическое дополнение</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="1069" class="card-full">
+    <div class="card-id">карточка #1069</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Линейная алгебра</span> → <span>Матрицы</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Алгебраическое дополнение элемента квадратной матрицы — это его минор, взятый со знаком, определяемым положением элемента. Оно является ключевым понятием для вычисления обратной матрицы и определителя.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1051.html" class="card-link">Определение матрицы</a> <a href="/cards/1052.html" class="card-link">Виды матриц</a> <a href="/cards/1053.html" class="card-link">Квадратная матрица</a> <a href="/cards/1054.html" class="card-link">Единичная матрица</a> <a href="/cards/1055.html" class="card-link">Нулевая матрица</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Алгебраическое дополнение A_ij элемента a_ij квадратной матрицы n-го порядка определяется по формуле: A_ij = (-1)^(i+j) * M_ij, где M_ij — минор этого элемента (определитель матрицы (n-1)-го порядка, полученной вычеркиванием i-й строки и j-го столбца). Знак (-1)^(i+j) меняется в шахматном порядке: на позиции (1,1) знак «+», (1,2) — «−», (1,3) — «+» и так далее.
+
+Основное свойство: сумма произведений элементов любой строки (или столбца) на их алгебраические дополнения равна определителю матрицы (теорема Лапласа). Например, для матрицы 2x2: A = [[a, b], [c, d]], алгебраические дополнения: A_11 = d, A_12 = -c, A_21 = -b, A_22 = a. Определитель: det(A) = a*A_11 + b*A_12 = a*d - b*c.
+
+Алгебраические дополнения широко применяются для нахождения обратной матрицы: обратная матрица A^(-1) = (1/det(A)) * (C^T), где C — матрица алгебраических дополнений (союзная матрица). Также они используются при решении систем линейных уравнений методом Крамера. Понятие тесно связано с квадратной матрицей, так как только для квадратных матриц существуют миноры и определители. Понимание базовых понятий, таких как <a href="/cards/1051.html" class="card-link">Определение матрицы</a> и <a href="/cards/1052.html" class="card-link">Виды матриц</a>, необходимо для работы с алгебраическими дополнениями.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

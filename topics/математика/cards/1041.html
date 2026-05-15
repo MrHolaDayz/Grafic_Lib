@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#1041 — Первообразные корни</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="1041" class="card-full">
+    <div class="card-id">карточка #1041</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Комплексные числа</span> → <span>Действия</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Первообразные корни — это корни n-й степени из единицы, которые не являются корнями меньшей степени. Они порождают все остальные корни n-й степени из единицы через возведение в степень.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1033.html" class="card-link">Сложение</a> <a href="/cards/1034.html" class="card-link">Вычитание</a> <a href="/cards/1035.html" class="card-link">Умножение</a> <a href="/cards/1036.html" class="card-link">Деление</a> <a href="/cards/1037.html" class="card-link">Возведение в степень</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Первообразные корни из единицы — это комплексные числа вида ω = e^(2πik/n), где k и n взаимно просты (gcd(k, n) = 1). Для данного n существует φ(n) таких корней (функция Эйлера). Основное свойство: если ω — первообразный корень n-й степени, то все корни n-й степени из единицы имеют вид ω^m для m = 0, 1, ..., n-1. Формула для вычисления: ω_m = cos(2πm/n) + i·sin(2πm/n). Например, для n = 4 первообразные корни — это i и -i, так как 1 и -1 являются корнями 2-й степени.
+
+Свойства первообразных корней: они образуют циклическую группу порядка n. Если ω — первообразный корень, то ω^k — первообразный корень тогда и только тогда, когда k взаимно просто с n. Пример: для n = 6 корни: ω = e^(2πi/6) = e^(πi/3). Первообразными будут ω^1 и ω^5, так как gcd(1,6)=1 и gcd(5,6)=1, а ω^2 и ω^4 — корни 3-й степени, ω^3 — корень 2-й степени. При возведении в степень первообразные корни порождают все остальные, что упрощает анализ циклических структур.
+
+Первообразные корни применяются в теории чисел (дискретные логарифмы, криптография), в обработке сигналов (быстрое преобразование Фурье) и в решении уравнений высших степеней. Связанные темы: <a href="/cards/1033.html" class="card-link">Сложение</a> и <a href="/cards/1034.html" class="card-link">Вычитание</a> используются при нахождении суммы всех корней (она равна 0 для n>1). <a href="/cards/1035.html" class="card-link">Умножение</a> корней соответствует сложению их аргументов: если ω_a и ω_b — корни, то ω_a · ω_b = ω_(a+b mod n). <a href="/cards/1036.html" class="card-link">Деление</a> корней реализуется через умножение на обратный элемент. <a href="/cards/1037.html" class="card-link">Возведение в степень</a> позволяет генерировать все корни из одного первообразного, а также проверять их свойства.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

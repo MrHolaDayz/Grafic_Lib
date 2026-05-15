@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#1060 — Транспонирование</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="1060" class="card-full">
+    <div class="card-id">карточка #1060</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Линейная алгебра</span> → <span>Матрицы</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Транспонирование — это операция, при которой строки исходной матрицы становятся столбцами новой матрицы, а столбцы — строками. Полученная матрица называется транспонированной и обозначается A^T.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1051.html" class="card-link">Определение матрицы</a> <a href="/cards/1052.html" class="card-link">Виды матриц</a> <a href="/cards/1053.html" class="card-link">Квадратная матрица</a> <a href="/cards/1054.html" class="card-link">Единичная матрица</a> <a href="/cards/1055.html" class="card-link">Нулевая матрица</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Определение и основные формулы. Пусть дана матрица A размером m x n. Транспонированная матрица A^T имеет размер n x m, и её элемент (i, j) равен элементу (j, i) исходной матрицы: (A^T)_{ij} = A_{ji}. Например, если A = [[1, 2], [3, 4]], то A^T = [[1, 3], [2, 4]]. Для квадратной матрицы (связанная тема: <a href="/cards/1053.html" class="card-link">Квадратная матрица</a>) транспонирование может совпадать с исходной матрицей, если она симметрична.
+
+Свойства и примеры. Основные свойства: (A^T)^T = A (повторное транспонирование возвращает исходную матрицу); (A + B)^T = A^T + B^T; (kA)^T = k * A^T для скаляра k; (AB)^T = B^T * A^T (порядок множителей меняется). Пример: для A = [[1, 0], [2, 3]] и B = [[4, 1], [0, -1]] имеем A^T = [[1, 2], [0, 3]], B^T = [[4, 0], [1, -1]].
+
+Где применяется, связь с другими темами. Транспонирование широко используется в линейной алгебре при решении систем уравнений (например, для нахождения обратной матрицы), в теории графов (матрицы смежности), в статистике (матрицы ковариации), а также в компьютерной графике и машинном обучении. Операция тесно связана с понятием симметричных матриц и ортогональных преобразований.
+
+Упомяни связанные темы: <a href="/cards/1051.html" class="card-link">Определение матрицы</a>, <a href="/cards/1052.html" class="card-link">Виды матриц</a>, Квадратная матрица. Транспонирование применимо к любой матрице, независимо от её типа (связанная тема: Определение матрицы и Виды матриц). Для квадратных матриц транспонирование позволяет выделить класс симметричных матриц, где A = A^T. Единичная и нулевая матрицы (связанные темы: <a href="/cards/1054.html" class="card-link">Единичная матрица</a>, <a href="/cards/1055.html" class="card-link">Нулевая матрица</a>) инвариантны относительно транспонирования: I^T = I, O
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

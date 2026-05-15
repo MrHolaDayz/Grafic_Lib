@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#1012 — Композиция отношений</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="1012" class="card-full">
+    <div class="card-id">карточка #1012</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Логика и множества</span> → <span>Отношения и функции</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Композиция отношений — это операция, при которой из двух бинарных отношений R ⊆ A × B и S ⊆ B × C строится новое отношение S ∘ R ⊆ A × C, такое что элемент a находится в отношении S ∘ R с элементом c, если существует элемент b, для которого a R b и b S c.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1000.html" class="card-link">Бинарные отношения</a> <a href="/cards/1001.html" class="card-link">Рефлексивность</a> <a href="/cards/1002.html" class="card-link">Симметричность</a> <a href="/cards/1003.html" class="card-link">Транзитивность</a> <a href="/cards/1004.html" class="card-link">Антисимметричность</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Композиция отношений определяется следующим образом: пусть даны два бинарных отношения R ⊆ A × B и S ⊆ B × C. Тогда их композицией (или произведением) называется отношение S ∘ R ⊆ A × C, где (a, c) ∈ S ∘ R тогда и только тогда, когда существует b ∈ B такой, что (a, b) ∈ R и (b, c) ∈ S. Если R и S — отношения на одном и том же множестве A, то композиция определяется как (x, z) ∈ S ∘ R ⇔ ∃ y ∈ A: (x, y) ∈ R и (y, z) ∈ S. Для степени отношения R^n (n ∈ ℕ) используется обозначение: R^1 = R, R^{n+1} = R ∘ R^n. Например, если R — отношение «быть сыном», то R^2 — отношение «быть внуком».
+
+Композиция отношений ассоциативна: (T ∘ S) ∘ R = T ∘ (S ∘ R), но не коммутативна (в общем случае S ∘ R ≠ R ∘ S). Если R рефлексивно (∀x: x R x), то R ∘ R содержит R (то есть R ⊆ R^2), но не обязательно равно ему. Если R симметрично, то и R^2 симметрично; если R транзитивно, то R^2 ⊆ R. Пример: на множестве людей отношение «быть родителем» не симметрично, а его композиция с самим собой даёт отношение «быть дедушкой или бабушкой».
+
+Композиция отношений широко применяется в теории графов (пути длины n в ориентированном графе задаются n-й степенью отношения смежности), в базах данных (естественное соединение таблиц), в теории автоматов и формальных языков. Связанные темы: <a href="/cards/1000.html" class="card-link">Бинарные отношения</a> — композиция является операцией над ними; <a href="/cards/1001.html" class="card-link">Рефлексивность</a> — если R рефлексивно, то R ⊆ R^2; <a href="/cards/1002.html" class="card-link">Симметричность</a> — композиция симметричных отношений симметрична; <a href="/cards/1003.html" class="card-link">Транзитивность</a> тесно связана с композицией (условие R^2 ⊆ R равносильно транзитивности); антисимметри
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

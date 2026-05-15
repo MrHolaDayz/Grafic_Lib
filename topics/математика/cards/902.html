@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#902 — Формула Бернулли</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="902" class="card-full">
+    <div class="card-id">карточка #902</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Комбинаторика и вероятность</span> → <span>Теория вероятностей</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Формула Бернулли — это ключевая формула теории вероятностей, позволяющая вычислить вероятность того, что в серии из n независимых испытаний событие наступит ровно k раз.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1031.html" class="card-link">Формула Эйлера</a> <a href="/cards/1038.html" class="card-link">Формула Муавра</a> <a href="/cards/1049.html" class="card-link">Формула Эйлера для тригонометрии</a> <a href="/cards/155.html" class="card-link">Формула сложного радикала</a> <a href="/cards/188.html" class="card-link">Формула Кардано</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Формула Бернулли (или схема Бернулли) применяется для повторных независимых испытаний, в каждом из которых вероятность успеха p постоянна. Вероятность получить ровно k успехов в n испытаниях выражается как: P_n(k) = C(n, k) * p^k * q^(n-k), где q = 1 - p — вероятность неудачи, а C(n, k) = n! / (k! * (n-k)!) — число сочетаний. Эта формула лежит в основе биномиального распределения.
+
+Основное свойство формулы Бернулли — сумма вероятностей для всех k от 0 до n равна единице, что следует из бинома Ньютона: (p + q)^n = Σ C(n,k) p^k q^(n-k). Пример: при бросании монеты 5 раз (p = 0.5) вероятность выпадения орла ровно 3 раза равна C(5,3)*(0.5)^3*(0.5)^2 = 10/32 = 0.3125.
+
+Формула Бернулли широко применяется в статистике, теории игр, контроле качества и биологии для моделирования бинарных исходов. Она тесно связана с другими математическими формулами: <a href="/cards/1031.html" class="card-link">Формула Эйлера</a> e^(iπ) + 1 = 0 используется в комплексном анализе, а <a href="/cards/1038.html" class="card-link">Формула Муавра</a> (cos x + i sin x)^n = cos(nx) + i sin(nx) является тригонометрическим аналогом биномиального распределения. Также <a href="/cards/1049.html" class="card-link">Формула Эйлера для тригонометрии</a> связывает экспоненту с синусом и косинусом, что позволяет обобщать вероятностные модели на непрерывные случаи.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

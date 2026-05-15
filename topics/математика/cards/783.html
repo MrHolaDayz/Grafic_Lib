@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#783 — Интегрирование рациональных дробей</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="783" class="card-full">
+    <div class="card-id">карточка #783</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Математический анализ</span> → <span>Интегралы</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Интегрирование рациональных дробей — это метод нахождения интегралов от дробей, числитель и знаменатель которых являются многочленами, путем разложения дроби на сумму простейших (элементарных) дробей.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/126.html" class="card-link">Сокращение алгебраических дробей</a> <a href="/cards/127.html" class="card-link">Сложение алгебраических дробей</a> <a href="/cards/128.html" class="card-link">Умножение и деление дробей</a> <a href="/cards/23.html" class="card-link">Сокращение дробей</a> <a href="/cards/25.html" class="card-link">Сравнение дробей</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Интегрирование рациональных дробей основано на представлении правильной рациональной дроби (где степень числителя меньше степени знаменателя) в виде суммы простейших дробей вида A/(x-a)^k и (Mx+N)/(x^2+px+q)^k, где квадратный трехчлен не имеет действительных корней. Основная формула для интегрирования: ∫ P(x)/Q(x) dx = ∫ (многочлен + сумма простейших дробей) dx. Для неправильной дроби сначала выделяют целую часть делением многочленов.
+
+Ключевые свойства: разложение зависит от корней знаменателя — для действительных различных корней a,b,...: A/(x-a) + B/(x-b) + ...; для кратных корней: A/(x-a) + B/(x-a)^2 + ...; для квадратичных множителей: (Mx+N)/(x^2+px+q). Пример: ∫ (x+1)/(x^2-5x+6) dx = ∫ (A/(x-2) + B/(x-3)) dx = 3ln|x-2| - 2ln|x-3| + C. После нахождения коэффициентов A,B интегралы сводятся к табличным (ln, arctg, степенные функции).
+
+Метод широко применяется в физике, теории вероятностей и дифференциальных уравнениях для решения задач, связанных с накоплением величин, описываемых дробно-рациональными функциями. Связь с другими темами: перед интегрированием часто требуется <a href="/cards/126.html" class="card-link">Сокращение алгебраических дробей</a> (упрощение множителей) и сложение/умножение дробей для проверки правильности разложения. Умение складывать и умножать дроби необходимо при обратном сведении суммы простейших дробей к исходной.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

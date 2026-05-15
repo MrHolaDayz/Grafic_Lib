@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#108 — Схема Горнера</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="108" class="card-full">
+    <div class="card-id">карточка #108</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Алгебра</span> → <span>Выражения</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Схема Горнера — это компактный алгоритм для вычисления значения многочлена в заданной точке и одновременного деления многочлена на линейный двучлен вида (x - a), основанный на последовательном перемножении и сложении коэффициентов.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/102.html" class="card-link">Одночлены</a> <a href="/cards/103.html" class="card-link">Многочлены</a> <a href="/cards/104.html" class="card-link">Степень многочлена</a> <a href="/cards/1045.html" class="card-link">Основная теорема алгебры</a> <a href="/cards/105.html" class="card-link">Сложение многочленов</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Схема Горнера (или правило Горнера) представляет собой метод вычисления значения многочлена P(x) = a_n*x^n + a_{n-1}*x^{n-1} + ... + a_1*x + a_0 в точке x = c. Вместо прямого возведения в степень, алгоритм сводит вычисления к n операциям умножения и n операциям сложения, используя рекуррентную формулу: b_0 = a_n, b_k = b_{k-1}*c + a_{n-k} для k = 1, 2, ..., n. Итоговое значение P(c) равно b_n. Этот же процесс позволяет найти коэффициенты частного и остаток от деления P(x) на (x - c): частное Q(x) = b_0*x^{n-1} + b_1*x^{n-2} + ... + b_{n-1}, а остаток R = b_n = P(c).
+
+Основное свойство схемы — её эффективность: количество операций линейно зависит от степени многочлена. Пример: для P(x) = 2x^3 - 3x^2 + 4x - 5 и c = 2 вычисления по схеме: b_0 = 2, b_1 = 2*2 - 3 = 1, b_2 = 1*2 + 4 = 6, b_3 = 6*2 - 5 = 7. Значит, P(2) = 7, а частное от деления на (x-2) равно 2x^2 + x + 6. Если остаток равен нулю, то c — корень многочлена, что связывает схему с теоремой Безу.
+
+Схема Горнера широко применяется в вычислительной математике для быстрого вычисления многочленов (например, в компьютерной графике), при разложении многочленов на множители и при решении алгебраических уравнений. Она тесно связана с такими темами, как <a href="/cards/102.html" class="card-link">Одночлены</a> (базовые элементы многочленов), <a href="/cards/103.html" class="card-link">Многочлены</a> (объект применения), <a href="/cards/104.html" class="card-link">Степень многочлена</a> (определяет количество шагов алгоритма), а также с Основной теоремой алгебры и Сложением многочленов, так как схема фактически выполняет последовательное
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

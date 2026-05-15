@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#775 — Интеграл степенной функции</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="775" class="card-full">
+    <div class="card-id">карточка #775</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Математический анализ</span> → <span>Интегралы</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Интеграл степенной функции — это первообразная для функции вида x^n, где n — любое действительное число, кроме -1. Основная формула имеет вид ∫x^n dx = x^(n+1)/(n+1) + C, а для случая n = -1 интеграл равен ln|x| + C.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/215.html" class="card-link">Тригонометрические функции</a> <a href="/cards/216.html" class="card-link">Обратные тригонометрические функции</a> <a href="/cards/222.html" class="card-link">Область определения функции</a> <a href="/cards/223.html" class="card-link">Область значений функции</a> <a href="/cards/224.html" class="card-link">Нули функции</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Интеграл степенной функции является одним из базовых понятий интегрального исчисления. Для функции f(x) = x^n (где n ≠ -1) неопределенный интеграл вычисляется по формуле: ∫x^n dx = x^(n+1)/(n+1) + C, где C — произвольная постоянная. Если n = -1, то есть функция имеет вид f(x) = 1/x, то интеграл равен натуральному логарифму: ∫(1/x) dx = ln|x| + C. Важно учитывать, что при n = -1 <a href="/cards/222.html" class="card-link">Область определения функции</a> исключает точку x = 0, поэтому модуль в логарифме необходим. Для корней, например √x = x^(1/2), формула также применима: ∫√x dx = (2/3)x^(3/2) + C.
+
+Свойства интеграла степенной функции включают линейность: ∫(a*x^n + b*x^m) dx = a*∫x^n dx + b*∫x^m dx. Пример: ∫(3x^2 + 2x) dx = 3*(x^3/3) + 2*(x^2/2) + C = x^3 + x^2 + C. Для отрицательных степеней, например ∫x^(-3) dx = x^(-2)/(-2) + C = -1/(2x^2) + C, требуется учитывать область определения (x ≠ 0). <a href="/cards/224.html" class="card-link">Нули функции</a> (точки, где f(x) = 0) часто служат границами при вычислении определенных интегралов.
+
+Интеграл степенной функции широко применяется в физике (вычисление работы, пути по скорости), экономике (модели роста) и геометрии (площади под кривыми). Связь с тригонометрическими функциями проявляется в интегралах вида ∫sin^n(x) dx, которые сводятся к степенным через замену. <a href="/cards/216.html" class="card-link">Обратные <a href="/cards/215.html" class="card-link">Тригонометрические функции</a></a>, такие как arctg(x), также интегрируются с использованием степенных рядов. Область определения функции критична: для n — целого отрицательного числа (например, x^(-2)) функция не определена при x = 0, что влияет на пределы интегрирования.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

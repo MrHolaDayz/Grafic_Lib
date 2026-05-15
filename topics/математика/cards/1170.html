@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#1170 — Линейные сравнения</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="1170" class="card-full">
+    <div class="card-id">карточка #1170</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Теория чисел</span> → <span>Сравнения</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Линейные сравнения — это уравнения вида a·x ≡ b (mod m), где a, b, m — целые числа, m > 0, а x — неизвестное целое число; их решение сводится к нахождению всех целых x, удовлетворяющих заданному сравнению по модулю m.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1100.html" class="card-link">Линейные преобразования</a> <a href="/cards/1169.html" class="card-link">Кольцо вычетов</a> <a href="/cards/1171.html" class="card-link">Китайская теорема об остатках</a> <a href="/cards/1172.html" class="card-link">Функция Эйлера</a> <a href="/cards/1173.html" class="card-link">Теорема Эйлера</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Линейным сравнением называется выражение a·x ≡ b (mod m), где a, m — взаимно простые числа (НОД(a, m) = 1) или нет. Основная формула решения: если НОД(a, m) = d, то сравнение имеет решение тогда и только тогда, когда d делит b. В этом случае количество решений по модулю m равно d, и все решения имеют вид x ≡ x₀ + k·(m/d) (mod m) для k = 0, 1, …, d-1, где x₀ — одно частное решение, находимое, например, с помощью расширенного алгоритма Евклида: a·x₀ + m·y₀ = d.
+
+Свойства линейных сравнений включают возможность умножения обеих частей на число, взаимно простое с модулем, а также сокращения на общий делитель при условии, что модуль также делится на этот делитель. Пример: решить 6·x ≡ 9 (mod 15). НОД(6, 15) = 3, 3 делит 9, поэтому есть 3 решения. Сокращаем на 3: 2·x ≡ 3 (mod 5). Решение: x ≡ 4 (mod 5), значит, по модулю 15: x ≡ 4, 9, 14 (mod 15). Другой пример: 2·x ≡ 3 (mod 6) не имеет решений, так как НОД(2, 6) = 2 не делит 3.
+
+Линейные сравнения широко применяются в криптографии (например, в шифрах Цезаря и аффинных шифрах), в теории кодирования и при решении систем сравнений. Они тесно связаны с кольцом вычетов Zₘ, где каждое сравнение соответствует линейному уравнению в этом кольце. <a href="/cards/1171.html" class="card-link">Китайская теорема об остатках</a> позволяет сводить систему линейных сравнений с взаимно простыми модулями к одному сравнению по произведению модулей. Также через линейные сравнения доказываются <a href="/cards/1173.html" class="card-link">Теорема Эйлера</a> и <a href="/cards/1172.html" class="card-link">Функция Эйлера</a> φ(m), которая определяет количество обратимых элементов в кольце вычетов. <a href="/cards/1100.html" class="card-link">Линейные преобразования</a> в контексте теории чисел часто рассматриваются как
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

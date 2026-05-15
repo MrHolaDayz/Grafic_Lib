@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#702 — Правило Лопиталя</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="702" class="card-full">
+    <div class="card-id">карточка #702</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Математический анализ</span> → <span>Пределы</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Правило Лопиталя — это метод нахождения пределов функций, раскрывающий неопределённости вида 0/0 или ∞/∞ с помощью производных числителя и знаменателя.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/205.html" class="card-link">Правило Крамера</a> <a href="/cards/619.html" class="card-link">Мнемоническое правило</a> <a href="/cards/663.html" class="card-link">Предел последовательности</a> <a href="/cards/664.html" class="card-link">Определение предела на языке ε-N</a> <a href="/cards/665.html" class="card-link">Сходящиеся последовательности</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Правило Лопиталя утверждает, что если функции f(x) и g(x) дифференцируемы в окрестности точки a (кроме, возможно, самой точки a), и предел их отношения даёт неопределённость 0/0 или ∞/∞, то lim (x→a) f(x)/g(x) = lim (x→a) f'(x)/g'(x), при условии, что предел отношения производных существует (или равен бесконечности). Основные формулы: для неопределённостей 0/0 и ∞/∞ применяется одно и то же правило; также оно работает для односторонних пределов и при x→∞. Важно помнить, что правило применимо только после проверки типа неопределённости.
+
+Свойства: правило можно применять многократно, если после первого использования неопределённость сохраняется. Пример: lim (x→0) sin(x)/x = lim (x→0) cos(x)/1 = 1. Другой пример: lim (x→∞) x^2/e^x = lim (x→∞) 2x/e^x = lim (x→∞) 2/e^x = 0. Важно: правило не работает для неопределённостей других типов (например, 0·∞ или 1^∞), их нужно предварительно преобразовать к 0/0 или ∞/∞.
+
+Правило Лопиталя широко применяется в математическом анализе для вычисления сложных пределов, особенно в задачах на рост функций и асимптотику. Оно тесно связано с понятием предела последовательности, так как предел функции часто сводится к пределу последовательности. Среди связанных тем: <a href="/cards/205.html" class="card-link">Правило Крамера</a> (метод решения систем линейных уравнений, не связан напрямую, но схож по названию и часто упоминается в контексте математических методов), <a href="/cards/619.html" class="card-link">Мнемоническое правило</a> (помогает запомнить условия применения), а также <a href="/cards/663.html" class="card-link">Предел последовательности</a> и <a href="/cards/665.html" class="card-link">Сходящиеся последовательности</a>, которые являются фундаментом для понимания пределов функций.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

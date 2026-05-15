@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#869 — Бином Ньютона</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="869" class="card-full">
+    <div class="card-id">карточка #869</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Комбинаторика и вероятность</span> → <span>Комбинаторика</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Бином Ньютона — это формула для разложения степени суммы двух слагаемых (a + b)^n в многочлен, где коэффициенты членов разложения вычисляются с помощью биномиальных коэффициентов (чисел сочетаний).
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/859.html" class="card-link">Правило суммы</a> <a href="/cards/860.html" class="card-link">Правило произведения</a> <a href="/cards/861.html" class="card-link">Факториал</a> <a href="/cards/862.html" class="card-link">Двойной факториал</a> <a href="/cards/863.html" class="card-link">Перестановки</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Определение и основные формулы. Бином Ньютона представляет собой разложение вида (a + b)^n = C(n,0) * a^n * b^0 + C(n,1) * a^(n-1) * b^1 + ... + C(n,k) * a^(n-k) * b^k + ... + C(n,n) * a^0 * b^n, где n — натуральное число, а C(n,k) — биномиальный коэффициент, равный n! / (k! * (n-k)!). В компактной форме формула записывается с использованием знака суммы: (a + b)^n = Σ (от k=0 до n) C(n,k) * a^(n-k) * b^k. Частный случай при a = 1, b = x даёт (1 + x)^n, а при a = b = 1 получается сумма всех биномиальных коэффициентов, равная 2^n.
+
+Свойства и примеры. Биномиальные коэффициенты обладают симметрией: C(n,k) = C(n, n-k). Они также удовлетворяют правилу Паскаля: C(n,k) + C(n, k-1) = C(n+1, k), что лежит в основе треугольника Паскаля. Пример: (x + y)^3 = C(3,0)*x^3 + C(3,1)*x^2*y + C(3,2)*x*y^2 + C(3,3)*y^3 = x^3 + 3x^2*y + 3x*y^2 + y^3. При возведении в степень с отрицательным или дробным показателем формула обобщается в бесконечный ряд (биномиальный ряд), но классический бином Ньютона определён только для целых неотрицательных n.
+
+Где применяется, связь с другими темами. Бином Ньютона широко используется в комбинаторике для подсчёта числа подмножеств, в теории вероятностей при вычислении биномиального распределения, а также в алгебре для упрощения выражений и доказательства тождеств. Он тесно связан с правилом суммы (сложение числа вариантов), правилом произведения (умножение вариантов при последовательных выборах) и <a href="/cards/861.html" class="card-link">Факториал</a>ом (n!), который входит в формулу биномиального коэффициента. Понимание двойного факториала и перестанов
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

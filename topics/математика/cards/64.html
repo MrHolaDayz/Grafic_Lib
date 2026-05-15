@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#64 — Теорема Вильсона</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="64" class="card-full">
+    <div class="card-id">карточка #64</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Арифметика</span> → <span>Делимость</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Теорема Вильсона — это критерий простоты натурального числа: натуральное число p > 1 является простым тогда и только тогда, когда (p-1)! + 1 делится на p, то есть (p-1)! ≡ -1 (mod p).
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1045.html" class="card-link">Основная теорема алгебры</a> <a href="/cards/1046.html" class="card-link">Теорема Руше</a> <a href="/cards/1075.html" class="card-link">Теорема о ранге</a> <a href="/cards/1081.html" class="card-link">Теорема Гамильтона-Кэли</a> <a href="/cards/1088.html" class="card-link">Теорема Кронекера-Капелли</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Теорема Вильсона формулируется так: натуральное число p > 1 является простым тогда и только тогда, когда (p-1)! ≡ -1 (mod p). В развернутом виде: (p-1)! + 1 = p * k для некоторого целого k. Например, для p = 5: (5-1)! = 24, 24 + 1 = 25, что делится на 5. Для p = 7: 6! = 720, 720 + 1 = 721, 721 / 7 = 103. Обратное утверждение также верно: если p составное, то (p-1)! ≡ 0 (mod p) для p > 4 (за исключением p = 4, где 3! = 6 ≡ 2 mod 4).
+
+Основное свойство теоремы — она дает необходимое и достаточное условие простоты числа, однако на практике используется редко из-за вычислительной сложности факториала для больших p. Пример: для p = 11: 10! = 3628800, 3628800 + 1 = 3628801, которое делится на 11 (11 * 329891 = 3628801). Для p = 13: 12! = 479001600, 479001600 + 1 = 479001601, делится на 13 (13 * 36846277 = 479001601).
+
+Теорема Вильсона применяется в теории чисел для доказательства других теорем о простых числах, а также в криптографии для проверки простоты чисел (хотя на практике используют более эффективные тесты, например, тест Миллера-Рабина). Связанные темы: <a href="/cards/1045.html" class="card-link">Основная теорема алгебры</a> утверждает, что любой многочлен степени n имеет ровно n комплексных корней (с учетом кратности), что используется при разложении полиномов. <a href="/cards/1046.html" class="card-link">Теорема Руше</a> помогает определить количество корней аналитической функции в области. <a href="/cards/1075.html" class="card-link">Теорема о ранге</a> связывает размерность образа и ядра линейного оператора. <a href="/cards/1081.html" class="card-link">Теорема Гамильтона-Кэли</a> и <a href="/cards/1088.html" class="card-link">Теорема Кронекера-Капелли</a> относятся к линейной алгебре и теории матриц.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

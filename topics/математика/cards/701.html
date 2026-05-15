@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#701 — Наклонные асимптоты</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="701" class="card-full">
+    <div class="card-id">карточка #701</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Математический анализ</span> → <span>Пределы</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Наклонная асимптота — это прямая вида y = kx + b, к которой неограниченно приближается график функции при x → +∞ или x → -∞, не пересекая её на бесконечности.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1142.html" class="card-link">Асимптоты гиперболы</a> <a href="/cards/663.html" class="card-link">Предел последовательности</a> <a href="/cards/664.html" class="card-link">Определение предела на языке ε-N</a> <a href="/cards/665.html" class="card-link">Сходящиеся последовательности</a> <a href="/cards/666.html" class="card-link">Расходящиеся последовательности</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Наклонная асимптота определяется уравнением y = kx + b, где угловой коэффициент k и свободный член b находятся по формулам: k = lim_{x→∞} f(x)/x (при условии, что предел существует и не равен 0 или ∞), затем b = lim_{x→∞} (f(x) - kx). Если k = 0, асимптота называется горизонтальной; если же предел для k не существует или равен ∞, наклонной асимптоты нет. Аналогично рассматривается предел при x → -∞, причём значения k и b могут различаться для разных направлений.
+
+Основное свойство наклонной асимптоты — расстояние от точки графика до прямой стремится к нулю при удалении аргумента в бесконечность. Пример: для функции f(x) = (x^2 + 1)/x при x → ∞ получаем k = 1, b = 0, то есть асимптота y = x. Другой пример — функция f(x) = √(x^2 + 1) + x: здесь k = 2, b = 0 при x → +∞, но при x → -∞ асимптота будет y = 0 (горизонтальная). Важно проверять оба направления, так как асимптоты могут быть разными.
+
+Наклонные асимптоты широко применяются в исследовании функций и построении графиков, особенно для рациональных и иррациональных функций. Эта тема тесно связана с понятием предела последовательности, так как вычисление k и b сводится к нахождению пределов. <a href="/cards/664.html" class="card-link">Определение предела на языке ε-N</a> используется для строгого доказательства существования асимптоты: для любого ε > 0 найдётся N, такое что для всех |x| > N выполняется |f(x) - (kx + b)| < ε. Кроме того, <a href="/cards/1142.html" class="card-link">Асимптоты гиперболы</a> (например, y = 1/x) являются частным случаем наклонных асимптот, а сходящиеся и ра<a href="/cards/665.html" class="card-link">Сходящиеся последовательности</a> помогают анализировать поведение функции на бесконечности.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

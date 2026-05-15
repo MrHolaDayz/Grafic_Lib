@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#818 — Метод Бернулли</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="818" class="card-full">
+    <div class="card-id">карточка #818</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Математический анализ</span> → <span>Дифференциальные уравнения</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Метод Бернулли — это способ решения нелинейных дифференциальных уравнений первого порядка вида y' + P(x)y = Q(x)y^n, который сводит их к линейным уравнениям с помощью замены переменной.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1084.html" class="card-link">Метод Крамера</a> <a href="/cards/1085.html" class="card-link">Матричный метод</a> <a href="/cards/1086.html" class="card-link">Метод Гаусса</a> <a href="/cards/1087.html" class="card-link">Метод Гаусса-Жордана</a> <a href="/cards/1090.html" class="card-link">Общее решение</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Метод Бернулли применяется к дифференциальным уравнениям вида y' + P(x)y = Q(x)y^n, где n — любое действительное число, не равное 0 или 1. Для решения выполняется замена z = y^(1-n), что позволяет преобразовать исходное уравнение в линейное относительно z: z' + (1-n)P(x)z = (1-n)Q(x). После нахождения общего решения для z производится обратная замена y = z^(1/(1-n)). Основная формула метода выводится через дифференцирование замены: z' = (1-n)y^(-n) y', что подставляется в исходное уравнение.
+
+Метод обладает свойством универсальности: он работает как для простых случаев, когда n — целое число, так и для дробных показателей степени. Например, для уравнения y' + y = xy^2 (n=2) замена z = y^(-1) приводит к линейному уравнению z' - z = -x. Решая его методом интегрирующего множителя, получаем z = Ce^x + x + 1, откуда y = 1/(Ce^x + x + 1). Важно помнить, что при n>0 решение y=0 может быть потеряно при делении на y^n.
+
+Метод Бернулли широко применяется в физике, биологии и экономике для моделирования процессов с нелинейной динамикой, таких как рост популяций или химические реакции. Он тесно связан с линейными дифференциальными уравнениями, к которым сводится после замены. В отличие от методов линейной алгебры, таких как <a href="/cards/1084.html" class="card-link">Метод Крамера</a>, <a href="/cards/1085.html" class="card-link">Матричный метод</a> или <a href="/cards/1086.html" class="card-link">Метод Гаусса</a>, которые решают системы алгебраических уравнений, метод Бернулли работает с дифференциальными уравнениями. Однако эти темы объединяет общий принцип: сведение сложной задачи к более простой (линейной) форме для нахождения общего решения.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

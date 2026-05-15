@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#109 — Теорема Безу</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="109" class="card-full">
+    <div class="card-id">карточка #109</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Алгебра</span> → <span>Выражения</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Теорема Безу утверждает, что остаток от деления многочлена P(x) на двучлен (x - a) равен значению этого многочлена при x = a, то есть P(a). Это фундаментальное свойство многочленов, позволяющее находить корни и разлагать их на множители.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/102.html" class="card-link">Одночлены</a> <a href="/cards/103.html" class="card-link">Многочлены</a> <a href="/cards/104.html" class="card-link">Степень многочлена</a> <a href="/cards/1045.html" class="card-link">Основная теорема алгебры</a> <a href="/cards/1046.html" class="card-link">Теорема Руше</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Теорема Безу формулируется так: пусть P(x) — многочлен степени n, а (x - a) — линейный двучлен. Тогда существует многочлен Q(x) степени n-1 такой, что P(x) = (x - a) * Q(x) + R, где R — число (остаток). Согласно теореме, R = P(a). Если P(a) = 0, то (x - a) является множителем P(x), а число a — корнем многочлена. Следствие из теоремы: многочлен степени n имеет не более n различных корней.
+
+Основные свойства: теорема позволяет быстро проверять, является ли число корнем многочлена, не выполняя деление уголком. Например, для P(x) = x^3 - 6x^2 + 11x - 6, проверим a = 2: P(2) = 8 - 24 + 22 - 6 = 0, значит, (x - 2) — множитель. Деление даст Q(x) = x^2 - 4x + 3, который затем раскладывается на (x - 1)(x - 3). Таким образом, корни: 1, 2, 3. Ещё пример: для P(x) = 2x^2 + 5x + 3, P(-1) = 2 - 5 + 3 = 0, значит (x + 1) — множитель, после деления получаем 2x + 3.
+
+Теорема Безу широко применяется в алгебре для разложения многочленов на множители, решения уравнений высших степеней и упрощения рациональных выражений. Она тесно связана со схемой Горнера, которая ускоряет вычисление P(a) и деление. Вместе с Основной теоремой алгебры (любой многочлен степени n имеет ровно n корней в комплексной плоскости) и теоремой Руше (о расположении корней) теорема Безу составляет основу теории многочленов. Связанные темы: <a href="/cards/102.html" class="card-link">Одночлены</a>, <a href="/cards/103.html" class="card-link">Многочлены</a>, <a href="/cards/104.html" class="card-link">Степень многочлена</a> — понимание этих понятий необходимо для применения теоремы, так как она оперирует со степенями,
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

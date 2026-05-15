@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#731 — Производная сложной функции</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="731" class="card-full">
+    <div class="card-id">карточка #731</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Математический анализ</span> → <span>Производная</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Производная сложной функции — это правило дифференцирования, позволяющее найти производную функции, аргументом которой является другая функция. Оно выражается формулой f(g(x))' = f'(g(x)) * g'(x).
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/215.html" class="card-link">Тригонометрические функции</a> <a href="/cards/216.html" class="card-link">Обратные тригонометрические функции</a> <a href="/cards/222.html" class="card-link">Область определения функции</a> <a href="/cards/223.html" class="card-link">Область значений функции</a> <a href="/cards/224.html" class="card-link">Нули функции</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Производная сложной функции (правило цепочки) определяется следующим образом: если дана функция y = f(u), где u = g(x), то производная y по x равна произведению производной f по u и производной g по x: (f(g(x)))' = f'(g(x)) * g'(x). В более компактной записи: dy/dx = (dy/du) * (du/dx). Для степенных функций, если y = (u(x))^n, то y' = n * (u(x))^(n-1) * u'(x). Для корней, например y = √(u(x)), производная равна (1 / (2√(u(x)))) * u'(x).
+
+Основные свойства: правило применимо к композиции любого конечного числа функций. Пример: найти производную функции y = sin(x^2). Здесь внешняя функция — синус, внутренняя — x^2. Тогда y' = cos(x^2) * (x^2)' = cos(x^2) * 2x. Другой пример: y = (3x + 1)^5. Тогда y' = 5*(3x + 1)^4 * 3 = 15*(3x + 1)^4.
+
+Данное правило широко применяется в физике (например, для нахождения скорости при сложном законе движения), в экономике (предельный анализ сложных зависимостей) и в других разделах математики. Производная сложной функции тесно связана с тригонометрическими функциями (sin, cos, tg и их композиции), а также с обратными тригонометрическими функциями (arcsin, arccos и т.д.), где правило цепочки обязательно для дифференцирования. При нахождении производной важно учитывать <a href="/cards/222.html" class="card-link">Область определения функции</a>, так как внутренняя функция может накладывать ограничения (например, подкоренное выражение должно быть неотрицательным). Также правило помогает находить <a href="/cards/224.html" class="card-link">Нули функции</a> — точки, где производная равна нулю, что критично для исследования монотонности и экстремумов.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

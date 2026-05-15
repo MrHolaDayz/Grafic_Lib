@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#880 — Формула включений и исключений</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="880" class="card-full">
+    <div class="card-id">карточка #880</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Комбинаторика и вероятность</span> → <span>Комбинаторика</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Формула включений и исключений — это комбинаторный метод вычисления мощности объединения нескольких множеств, учитывающий все пересечения: из суммы мощностей всех множеств вычитаются мощности попарных пересечений, затем прибавляются мощности пересечений троек и так далее.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1031.html" class="card-link">Формула Эйлера</a> <a href="/cards/1038.html" class="card-link">Формула Муавра</a> <a href="/cards/1049.html" class="card-link">Формула Эйлера для тригонометрии</a> <a href="/cards/128.html" class="card-link">Умножение и деление дробей</a> <a href="/cards/155.html" class="card-link">Формула сложного радикала</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Формула включений и исключений позволяет найти количество элементов в объединении конечного числа множеств, избегая двойного счета. Для двух множеств A и B она записывается как |A ∪ B| = |A| + |B| − |A ∩ B|. Для трех множеств A, B, C: |A ∪ B ∪ C| = |A| + |B| + |C| − |A ∩ B| − |A ∩ C| − |B ∩ C| + |A ∩ B ∩ C|. В общем виде для n множеств: |∪_{i=1}^n A_i| = Σ|A_i| − Σ|A_i ∩ A_j| + Σ|A_i ∩ A_j ∩ A_k| − ... + (−1)^{n+1}|A_1 ∩ A_2 ∩ ... ∩ A_n|, где знаки чередуются.
+
+Основное свойство формулы — она дает точный результат для конечных множеств. Пример: сколько чисел от 1 до 100 делятся на 2 или на 3? |A| (делятся на 2) = 50, |B| (делятся на 3) = 33, |A ∩ B| (делятся на 6) = 16. Тогда |A ∪ B| = 50 + 33 − 16 = 67. Другой пример: подсчет числа перестановок с фиксированными позициями (задача о беспорядках).
+
+Формула включений и исключений применяется в комбинаторике, теории вероятностей, теории чисел (например, для подсчета чисел, взаимно простых с данным) и в статистике. Она связана с принципом двойственности и может быть обобщена на меру в теории вероятностей. Среди связанных тем: <a href="/cards/1031.html" class="card-link">Формула Эйлера</a> (e^{iφ} = cos φ + i sin φ) используется в комплексном анализе, но не имеет прямого отношения к включениям-исключениям. <a href="/cards/1038.html" class="card-link">Формула Муавра</a> ( (cos φ + i sin φ)^n = cos(nφ) + i sin(nφ) ) также относится к тригонометрии комплексных чисел. <a href="/cards/1049.html" class="card-link">Формула Эйлера для тригонометрии</a> выражает sin и cos через экспоненту. Эти темы объединяет работа с формулами, но
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

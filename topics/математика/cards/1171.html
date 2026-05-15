@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#1171 — Китайская теорема об остатках</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="1171" class="card-full">
+    <div class="card-id">карточка #1171</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Теория чисел</span> → <span>Сравнения</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Китайская теорема об остатках утверждает, что для системы линейных сравнений по модулям, которые попарно взаимно просты, существует единственное решение по модулю их произведения.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1045.html" class="card-link">Основная теорема алгебры</a> <a href="/cards/1046.html" class="card-link">Теорема Руше</a> <a href="/cards/1075.html" class="card-link">Теорема о ранге</a> <a href="/cards/1081.html" class="card-link">Теорема Гамильтона-Кэли</a> <a href="/cards/1088.html" class="card-link">Теорема Кронекера-Капелли</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Китайская теорема об остатках (КТО) формулируется так: пусть m_1, m_2, ..., m_k — попарно взаимно простые натуральные числа (то есть НОД(m_i, m_j) = 1 при i ≠ j). Тогда для любой системы сравнений x ≡ a_1 (mod m_1), x ≡ a_2 (mod m_2), ..., x ≡ a_k (mod m_k) существует единственное решение по модулю M = m_1 * m_2 * ... * m_k. Решение можно найти по формуле: x = Σ (a_i * M_i * y_i) mod M, где M_i = M / m_i, а y_i — обратный элемент к M_i по модулю m_i (то есть M_i * y_i ≡ 1 mod m_i).
+
+Основное свойство теоремы — она сводит решение системы сравнений к решению отдельных сравнений и их объединению. Пример: найти x такое, что x ≡ 2 (mod 3), x ≡ 3 (mod 5), x ≡ 2 (mod 7). Здесь модули 3, 5, 7 попарно взаимно просты, M = 105. M_1 = 35, обратный к 35 mod 3 равен 2, M_2 = 21, обратный к 21 mod 5 равен 1, M_3 = 15, обратный к 15 mod 7 равен 1. Тогда x = 2*35*2 + 3*21*1 + 2*15*1 = 140 + 63 + 30 = 233 ≡ 23 mod 105. Проверка: 23 mod 3 = 2, mod 5 = 3, mod 7 = 2.
+
+Теорема широко применяется в криптографии (например, в RSA для ускорения вычислений), в комбинаторике, в алгоритмах для работы с большими целыми числами (через представление числа в виде набора остатков). Связь с другими темами: КТО является частным случаем более общих утверждений в теории колец и модулей, а также тесно связана с понятием прямой суммы колец. В отличие от Основной теоремы алгебры (о существовании корней многочлена над C) или Теоремы Руше (о числе нулей аналитической функции), КТО относится к дискретной математике. Теоре
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

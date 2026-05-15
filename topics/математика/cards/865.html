@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#865 — Размещения</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="865" class="card-full">
+    <div class="card-id">карточка #865</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Комбинаторика и вероятность</span> → <span>Комбинаторика</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Размещения — это комбинаторные конфигурации, представляющие собой упорядоченные наборы из k элементов, выбранных из n различных элементов, где важен порядок и наборы отличаются как составом, так и порядком следования элементов.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/859.html" class="card-link">Правило суммы</a> <a href="/cards/860.html" class="card-link">Правило произведения</a> <a href="/cards/861.html" class="card-link">Факториал</a> <a href="/cards/862.html" class="card-link">Двойной факториал</a> <a href="/cards/863.html" class="card-link">Перестановки</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Размещениями из n элементов по k (обозначаются A_n^k или P(n,k)) называются упорядоченные подмножества, состоящие из k различных элементов, выбранных из данного множества, содержащего n различных элементов. Основная формула для числа размещений: A_n^k = n! / (n-k)!. В частном случае, когда k = n, размещения превращаются в <a href="/cards/863.html" class="card-link">Перестановки</a>: A_n^n = n!. Если же k = 1, то A_n^1 = n, что совпадает с числом способов выбрать один элемент.
+
+Ключевое свойство размещений — строгая зависимость от порядка: наборы (a,b) и (b,a) считаются разными размещениями. Например, из трех букв {A, B, C} можно составить A_3^2 = 3!/(3-2)! = 6 размещений по 2: AB, AC, BA, BC, CA, CB. Размещения тесно связаны с правилом произведения: выбор первого элемента (n способов), второго (n-1 способ) и так далее до k-го элемента (n-k+1 способ) даёт произведение n*(n-1)*...*(n-k+1), что и равно n!/(n-k)!.
+
+Размещения применяются в задачах, где важен порядок: распределение призовых мест (золото, серебро, бронза) среди участников, составление кодов или паролей из неповторяющихся символов, расстановка книг на полке. В комбинаторике размещения связывают <a href="/cards/859.html" class="card-link">Правило суммы</a> (когда варианты не пересекаются) и <a href="/cards/860.html" class="card-link">Правило произведения</a> (последовательный выбор). <a href="/cards/861.html" class="card-link">Факториал</a> n! служит базой для вычислений, а <a href="/cards/862.html" class="card-link">Двойной факториал</a> может возникать в задачах с дополнительными ограничениями. Понимание размещений необходимо для перехода к более сложным темам, таким как сочетания (где порядок не важен) и перестановки с повторениями.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

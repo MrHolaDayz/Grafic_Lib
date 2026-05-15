@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#62 — Китайская теорема об остатках</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="62" class="card-full">
+    <div class="card-id">карточка #62</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Арифметика</span> → <span>Делимость</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Китайская теорема об остатках утверждает, что для любой системы сравнений с попарно взаимно простыми модулями существует единственное решение по модулю произведения этих модулей.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <span style="color:#3d5065;">нет связей</span>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Китайская теорема об остатках (КТО) — фундаментальный результат теории чисел, описывающий решение системы линейных сравнений. Пусть даны попарно взаимно простые целые числа n1, n2, ..., nk, то есть НОД(ni, nj) = 1 для i ≠ j. Тогда для любых целых остатков a1, a2, ..., ak система сравнений x ≡ a1 (mod n1), x ≡ a2 (mod n2), ..., x ≡ ak (mod nk) имеет единственное решение по модулю N = n1 * n2 * ... * nk. Решение можно найти по формуле: x = Σ(ai * Ni * yi) mod N, где Ni = N / ni, а yi — обратный элемент к Ni по модулю ni, то есть Ni * yi ≡ 1 (mod ni).
+
+Свойства теоремы включают существование и единственность решения при условии взаимной простоты модулей. Если модули не являются попарно взаимно простыми, система может быть несовместной или иметь несколько решений. Пример: решим систему x ≡ 2 (mod 3), x ≡ 3 (mod 5), x ≡ 2 (mod 7). Здесь n1=3, n2=5, n3=7, N=105. Вычисляем N1=35, N2=21, N3=15. Обратные элементы: y1=2 (так как 35*2=70≡1 mod 3), y2=1 (21*1=21≡1 mod 5), y3=1 (15*1=15≡1 mod 7). Тогда x = (2*35*2 + 3*21*1 + 2*15*1) mod 105 = (140 + 63 + 30) mod 105 = 233 mod 105 = 23. Проверка: 23≡2 mod 3, 23≡3 mod 5, 23≡2 mod 7.
+
+Теорема широко применяется в криптографии (например, в схеме RSA для ускорения вычислений), в вычислительной математике для работы с большими числами (представление числа через остатки), в комбинаторике и теории кодирования. Она связана с понятием китайского кодирования и модулярной арифметики. Связанные темы: отсутствуют.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

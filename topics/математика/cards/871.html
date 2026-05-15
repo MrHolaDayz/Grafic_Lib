@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#871 — Свойства биномиальных коэффициентов</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="871" class="card-full">
+    <div class="card-id">карточка #871</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Комбинаторика и вероятность</span> → <span>Комбинаторика</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Биномиальные коэффициенты C(n,k) (число сочетаний из n по k) обладают рядом фундаментальных свойств, таких как симметрия, рекуррентное соотношение Паскаля и связь с биномом Ньютона, что делает их ключевым инструментом в комбинаторике и алгебре.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1021.html" class="card-link">Свойства сопряженных чисел</a> <a href="/cards/1025.html" class="card-link">Свойства модуля</a> <a href="/cards/1061.html" class="card-link">Свойства транспонирования</a> <a href="/cards/1065.html" class="card-link">Свойства операций</a> <a href="/cards/1067.html" class="card-link">Свойства определителя</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Определение и основные формулы. Биномиальный коэффициент C(n,k) (или (n choose k)) определяется как количество способов выбрать k элементов из n без учёта порядка. Формула: C(n,k) = n! / (k! * (n-k)!). Согласно биному Ньютона, (a + b)^n = Σ_{k=0}^{n} C(n,k) * a^(n-k) * b^k. Важнейшие частные случаи: C(n,0) = C(n,n) = 1, C(n,1) = n.
+
+Свойства и примеры. Основные свойства включают: симметрию C(n,k) = C(n, n-k); рекуррентное соотношение Паскаля C(n,k) = C(n-1, k-1) + C(n-1, k); сумму биномиальных коэффициентов Σ_{k=0}^{n} C(n,k) = 2^n; а также тождество для сумм с чередованием знаков Σ_{k=0}^{n} (-1)^k * C(n,k) = 0. Пример: для n=5, C(5,2)=10, и по симметрии C(5,3)=10; по правилу Паскаля C(5,2)=C(4,1)+C(4,2)=4+6=10.
+
+Где применяется, связь с другими темами. Свойства биномиальных коэффициентов широко используются в теории вероятностей (формула Бернулли), комбинаторных задачах, разложении многочленов и в дискретной математике. Эти свойства тесно связаны с комбинаторными тождествами и треугольником Паскаля. Среди смежных тем можно выделить <a href="/cards/1021.html" class="card-link">Свойства сопряженных чисел</a> (например, при работе с комплексными корнями из единицы в суммах), <a href="/cards/1025.html" class="card-link">Свойства модуля</a> (при оценке величин сумм с биномиальными коэффициентами), <a href="/cards/1061.html" class="card-link">Свойства транспонирования</a> (в контексте матриц Паскаля, где симметрия коэффициентов соответствует транспонированию матрицы), а также <a href="/cards/1065.html" class="card-link">Свойства операций</a> и определителя (при вычислении определителей матриц, элементами которых являются биномиальные коэффициенты).
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

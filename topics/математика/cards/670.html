@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#670 — Предел частного</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="670" class="card-full">
+    <div class="card-id">карточка #670</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Математический анализ</span> → <span>Пределы</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Предел частного — это теорема, утверждающая, что предел отношения двух функций равен отношению их пределов, при условии, что предел знаменателя отличен от нуля.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/140.html" class="card-link">Степень частного</a> <a href="/cards/149.html" class="card-link">Извлечение корня из частного</a> <a href="/cards/161.html" class="card-link">Логарифм частного</a> <a href="/cards/663.html" class="card-link">Предел последовательности</a> <a href="/cards/664.html" class="card-link">Определение предела на языке ε-N</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Определение и основные формулы. Если существуют пределы lim_{x→a} f(x) = A и lim_{x→a} g(x) = B, причем B ≠ 0, то предел частного равен частному пределов: lim_{x→a} (f(x)/g(x)) = A/B. Для последовательностей аналогично: если lim_{n→∞} a_n = A и lim_{n→∞} b_n = B ≠ 0, то lim_{n→∞} (a_n/b_n) = A/B. Доказательство основывается на определении предела на языке ε-N (для последовательностей) или ε-δ (для функций) и требует оценки разности f/g - A/B с использованием ограниченности знаменателя вблизи точки.
+
+Свойства и примеры. Свойство работает только при ненулевом пределе знаменателя. Если B = 0, а A ≠ 0, то предел частного равен бесконечности (со знаком, зависящим от знаков A и B). Пример: lim_{x→0} (sin x)/x = 1, где и числитель, и знаменатель стремятся к 0, но теорема напрямую неприменима (требуется раскрытие неопределенности). Другой пример: lim_{x→1} (x^2 - 1)/(x - 1) = lim_{x→1} (x+1) = 2, где предел знаменателя равен 0, но после сокращения неопределенность устраняется.
+
+Где применяется, связь с другими темами. Теорема о пределе частного является базовым инструментом для вычисления пределов рациональных функций и широко используется в дифференциальном исчислении (например, при выводе правила Лопиталя). Она тесно связана с другими свойствами пределов: суммы, произведения и постоянного множителя. Вместе они позволяют разбивать сложные выражения на простые составляющие. Также применяется при исследовании сходимости рядов и в теории вероятностей.
+
+Связанные темы: <a href="/cards/140.html" class="card-link">Степень частного</a>, <a href="/cards/149.html" class="card-link">Извлечение корня из частного</a>, <a href="/cards/161.html" class="card-link">Логарифм частного</a>. Для степени частного: lim (f/g)^n = (lim f / lim g)^n при тех же условиях. Для корня: lim √(f/g) = √(lim f / lim g), если корень определен. Для логарифма: lim ln(f/g) = ln(
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

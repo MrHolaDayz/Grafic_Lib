@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#61 — Сравнения по модулю</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="61" class="card-full">
+    <div class="card-id">карточка #61</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Арифметика</span> → <span>Делимость</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Сравнения по модулю — это бинарное отношение между целыми числами, определяющее их равенство при делении на заданный модуль. Два числа считаются сравнимыми по модулю m, если их разность делится на m нацело.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1070.html" class="card-link">Разложение по строке</a> <a href="/cards/1071.html" class="card-link">Разложение по столбцу</a> <a href="/cards/1166.html" class="card-link">Простые числа</a> <a href="/cards/1170.html" class="card-link">Линейные сравнения</a> <a href="/cards/1171.html" class="card-link">Китайская теорема об остатках</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Определение: Целые числа a и b называются сравнимыми по модулю m (m > 0), если их разность a - b делится на m. Обозначение: a ≡ b (mod m). Формально: a ≡ b (mod m) ⇔ m | (a - b). Основные формулы: если a ≡ b (mod m) и c ≡ d (mod m), то a + c ≡ b + d (mod m), a - c ≡ b - d (mod m), a * c ≡ b * d (mod m), и a^k ≡ b^k (mod m) для любого натурального k. Частным случаем является сравнение с нулём: a ≡ 0 (mod m) означает, что m делит a.
+
+Свойства сравнений аналогичны свойствам равенств: они рефлексивны, симметричны и транзитивны. Пример: 17 ≡ 2 (mod 5), так как 17 - 2 = 15 делится на 5. Сравнения можно сокращать на общий множитель, только если он взаимно прост с модулем: если ca ≡ cb (mod m) и НОД(c, m) = 1, то a ≡ b (mod m). Если же НОД(c, m) > 1, то сокращение возможно с изменением модуля: a ≡ b (mod m/НОД(c, m)). Важное свойство: классы вычетов по модулю m образуют кольцо Z_m.
+
+Сравнения по модулю широко применяются в теории чисел, криптографии (например, RSA), алгоритмах (проверка контрольных сумм, хеширование) и при решении диофантовых уравнений. Они тесно связаны с темами: <a href="/cards/1166.html" class="card-link">Простые числа</a> (малая теорема Ферма: если p простое и p не делит a, то a^(p-1) ≡ 1 (mod p)), <a href="/cards/1170.html" class="card-link">Линейные сравнения</a> (решение уравнений вида ax ≡ b (mod m)), <a href="/cards/1171.html" class="card-link">Китайская теорема об остатках</a> (позволяет восстанавливать число по его остаткам от деления на взаимно простые модули). Также сравнения используются при Разложении по строке и Разложении по столбцу в контексте матричных вычислений и работы с определителями по модулю.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

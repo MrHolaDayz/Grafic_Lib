@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#765 — Формула Тейлора</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="765" class="card-full">
+    <div class="card-id">карточка #765</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Математический анализ</span> → <span>Применение производной</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Формула Тейлора позволяет представить произвольную гладкую функцию в виде суммы степенного многочлена (называемого многочленом Тейлора) и остаточного члена, который оценивает погрешность этого приближения в окрестности заданной точки.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1031.html" class="card-link">Формула Эйлера</a> <a href="/cards/1038.html" class="card-link">Формула Муавра</a> <a href="/cards/1049.html" class="card-link">Формула Эйлера для тригонометрии</a> <a href="/cards/1174.html" class="card-link">Теорема Ферма</a> <a href="/cards/155.html" class="card-link">Формула сложного радикала</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Формула Тейлора является фундаментальным инструментом математического анализа, обобщающим понятие дифференциала. Если функция f(x) дифференцируема n+1 раз в окрестности точки a, то её можно разложить следующим образом: f(x) = f(a) + f'(a)(x-a) + (f''(a)/2!)*(x-a)^2 + ... + (f^(n)(a)/n!)*(x-a)^n + R_n(x). Здесь R_n(x) — остаточный член, который может быть записан в форме Лагранжа: R_n(x) = (f^(n+1)(ξ)/(n+1)!)*(x-a)^(n+1), где ξ — некоторая точка между a и x. Частный случай при a=0 называется рядом Маклорена: f(x) = f(0) + f'(0)x + (f''(0)/2!)x^2 + ... + (f^(n)(0)/n!)x^n + ... .
+
+Основное свойство формулы Тейлора — возможность локально заменять сложные функции простыми многочленами с контролируемой точностью. Например, для функции e^x в окрестности нуля: e^x = 1 + x + x^2/2! + x^3/3! + ... + x^n/n! + ... . Для sin(x): sin(x) = x - x^3/3! + x^5/5! - x^7/7! + ... . Эти разложения позволяют вычислять значения функций с любой наперёд заданной точностью, используя только арифметические операции.
+
+Формула Тейлора широко применяется в численных методах, приближённых вычислениях, физике (например, для линеаризации уравнений движения) и теории приближений. Она тесно связана с другими важными формулами. В частности, **<a href="/cards/1031.html" class="card-link">Формула Эйлера</a>** e^(ix) = cos(x) + i sin(x) получается подстановкой ix в ряд Тейлора для экспоненты. **<a href="/cards/1038.html" class="card-link">Формула Муавра</a>** (cos(x) + i sin(x))^n = cos(nx) + i sin(nx) выводится из той же экспоненциальной записи. **<a href="/cards/1049.html" class="card-link">Формула Эйлера для тригонометрии</a>** даёт выражения синуса
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

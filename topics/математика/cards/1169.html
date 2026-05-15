@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#1169 — Кольцо вычетов</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="1169" class="card-full">
+    <div class="card-id">карточка #1169</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Теория чисел</span> → <span>Сравнения</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Кольцо вычетов по модулю n — это множество классов эквивалентности целых чисел по отношению сравнимости по модулю n, на котором определены операции сложения и умножения, превращающие его в коммутативное кольцо.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1170.html" class="card-link">Линейные сравнения</a> <a href="/cards/1171.html" class="card-link">Китайская теорема об остатках</a> <a href="/cards/1172.html" class="card-link">Функция Эйлера</a> <a href="/cards/1173.html" class="card-link">Теорема Эйлера</a> <a href="/cards/1174.html" class="card-link">Теорема Ферма</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Кольцо вычетов по модулю n, обозначаемое Z_n или Z/nZ, состоит из элементов 0, 1, ..., n-1, представляющих остатки от деления на n. Сложение и умножение выполняются по модулю n: (a + b) mod n и (a * b) mod n. Формально, это факторкольцо кольца целых чисел Z по идеалу nZ. Например, в Z_6: 4 + 5 = 9 mod 6 = 3, а 4 * 5 = 20 mod 6 = 2. Кольцо Z_n является полем тогда и только тогда, когда n — простое число; в противном случае в нём есть делители нуля (например, 2 * 3 = 0 в Z_6).
+
+Основные свойства: Z_n всегда является коммутативным кольцом с единицей. Обратимые элементы (образующие мультипликативную группу Z_n^*) — это числа, взаимно простые с n; их количество равно φ(n), где φ — <a href="/cards/1172.html" class="card-link">Функция Эйлера</a>. Например, в Z_8 обратимые элементы: 1, 3, 5, 7 (φ(8)=4). Для любого a, взаимно простого с n, выполняется <a href="/cards/1173.html" class="card-link">Теорема Эйлера</a>: a^φ(n) ≡ 1 (mod n). Частный случай для простого p — малая <a href="/cards/1174.html" class="card-link">Теорема Ферма</a>: a^(p-1) ≡ 1 (mod p) при a, не кратном p.
+
+Кольцо вычетов является фундаментальным объектом в теории чисел и криптографии. Оно применяется для решения линейных сравнений вида a*x ≡ b (mod n), которые имеют решение, если НОД(a,n) делит b. <a href="/cards/1171.html" class="card-link">Китайская теорема об остатках</a> позволяет разложить кольцо Z_n в произведение колец Z_{n1} × ... × Z_{nk} для взаимно простых множителей n. Связь с функцией Эйлера проявляется в подсчёте обратимых элементов и в теореме Эйлера. Кольцо Z_n также используется в криптосистемах RSA и в алгоритмах с открытым ключом.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

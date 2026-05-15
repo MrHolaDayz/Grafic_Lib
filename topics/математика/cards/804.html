@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#804 — Несобственные интегралы первого рода</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="804" class="card-full">
+    <div class="card-id">карточка #804</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Математический анализ</span> → <span>Интегралы</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Несобственные интегралы первого рода — это интегралы с бесконечными пределами интегрирования, определяемые через предел от обычного определенного интеграла при стремлении верхнего или нижнего предела к бесконечности.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/769.html" class="card-link">Первообразная</a> <a href="/cards/770.html" class="card-link">Определение первообразной</a> <a href="/cards/771.html" class="card-link">Основное свойство первообразной</a> <a href="/cards/772.html" class="card-link">Неопределенный интеграл</a> <a href="/cards/773.html" class="card-link">Свойства неопределенного интеграла</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Несобственные интегралы первого рода возникают, когда один или оба предела интегрирования бесконечны. Формально, для функции f(x), непрерывной на [a, +∞), несобственный интеграл определяется как lim_{b→+∞} ∫_a^b f(x) dx. Если этот предел существует и конечен, интеграл называется сходящимся, иначе — расходящимся. Аналогично для интервала (-∞, b] и для двустороннего случая: ∫_{-∞}^{+∞} f(x) dx = lim_{a→-∞} ∫_a^c f(x) dx + lim_{b→+∞} ∫_c^b f(x) dx, где c — любая точка.
+
+Свойства таких интегралов включают линейность и аддитивность по промежуткам. Основной пример: ∫_1^{+∞} (1/x^p) dx сходится при p > 1 (значение равно 1/(p-1)) и расходится при p ≤ 1. Другой пример: ∫_0^{+∞} e^{-x} dx = 1. Для исследования сходимости часто используют признак сравнения: если 0 ≤ f(x) ≤ g(x) и ∫ g(x) dx сходится, то ∫ f(x) dx тоже сходится, и наоборот для расходимости.
+
+Несобственные интегралы первого рода широко применяются в теории вероятностей (нормировка плотностей распределения, например, ∫_{-∞}^{+∞} e^{-x^2/2} dx = √(2π)), в физике (вычисление работы на бесконечном пути, потенциалов) и в анализе (преобразования Фурье и Лапласа). Они тесно связаны с понятием первообразной: если F(x) — <a href="/cards/769.html" class="card-link">Первообразная</a> для f(x), то ∫_a^{+∞} f(x) dx = lim_{b→+∞} F(b) - F(a). <a href="/cards/770.html" class="card-link">Определение первообразной</a> и ее основное свойство (<a href="/cards/772.html" class="card-link">Неопределенный интеграл</a> как семейство первообразных) остаются в силе, но предел при бесконечности требует дополнительного анализа сходимости.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

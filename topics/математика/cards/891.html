@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#891 — Сумма событий</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="891" class="card-full">
+    <div class="card-id">карточка #891</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Комбинаторика и вероятность</span> → <span>Теория вероятностей</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Сумма событий — это логическая операция в теории вероятностей, соответствующая объединению двух или более событий, означающая наступление хотя бы одного из них.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1098.html" class="card-link">Сумма подпространств</a> <a href="/cards/1099.html" class="card-link">Прямая сумма</a> <a href="/cards/116.html" class="card-link">Сумма кубов</a> <a href="/cards/260.html" class="card-link">Сумма арифметической прогрессии</a> <a href="/cards/264.html" class="card-link">Сумма геометрической прогрессии</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Суммой (или объединением) событий A и B называется событие A ∪ B, состоящее в наступлении хотя бы одного из этих событий. Вероятность суммы событий вычисляется по формуле: P(A ∪ B) = P(A) + P(B) - P(A ∩ B), где P(A ∩ B) — вероятность их совместного наступления (пересечения). Для несовместных событий (когда A ∩ B = ∅) формула упрощается до P(A ∪ B) = P(A) + P(B). В общем случае для n событий используется принцип включения-исключения: P(∪ A_i) = Σ P(A_i) - Σ P(A_i ∩ A_j) + Σ P(A_i ∩ A_j ∩ A_k) - ... + (-1)^{n+1} P(∩ A_i).
+
+Свойства суммы событий: операция коммутативна (A ∪ B = B ∪ A), ассоциативна (A ∪ (B ∪ C) = (A ∪ B) ∪ C) и идемпотентна (A ∪ A = A). Пример: бросание игрального кубика. Пусть A = {выпадение четного числа}, B = {выпадение числа больше 3}. Тогда A ∪ B = {2, 4, 6, 5, 4} = {2, 4, 5, 6}. Вероятность P(A ∪ B) = P(A) + P(B) - P(A ∩ B) = 3/6 + 3/6 - 2/6 = 4/6 = 2/3.
+
+Сумма событий широко применяется в статистике, теории надежности (вероятность отказа хотя бы одного элемента системы), страховании и анализе рисков. Она тесно связана с другими разделами математики: например, в линейной алгебре <a href="/cards/1098.html" class="card-link">Сумма подпространств</a> (U + W = {u + w | u ∈ U, w ∈ W}) аналогична объединению множеств, но с учетом линейных комбинаций. <a href="/cards/1099.html" class="card-link">Прямая сумма</a> (U ⊕ W) — частный случай, когда пересечение подпространств равно {0}. В арифметике <a href="/cards/116.html" class="card-link">Сумма кубов</a> (a^3 + b^3) раскладывается как (a + b)(a^2 - ab + b^2), что является алгебраическим аналогом операции сложения. Также сумма событий концептуально связана с суммами прогрессий: например, вычисление вероят
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

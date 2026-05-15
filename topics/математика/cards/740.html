@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#740 — Формула Лейбница</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="740" class="card-full">
+    <div class="card-id">карточка #740</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Математический анализ</span> → <span>Производная</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Формула Лейбница — это правило дифференцирования произведения двух функций, позволяющее вычислить производную n-го порядка от произведения как сумму комбинаций производных каждого сомножителя.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1031.html" class="card-link">Формула Эйлера</a> <a href="/cards/1038.html" class="card-link">Формула Муавра</a> <a href="/cards/1049.html" class="card-link">Формула Эйлера для тригонометрии</a> <a href="/cards/155.html" class="card-link">Формула сложного радикала</a> <a href="/cards/188.html" class="card-link">Формула Кардано</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Формула Лейбница обобщает правило произведения для производных высших порядков. Если u(x) и v(x) — дважды дифференцируемые функции, то n-я производная их произведения выражается как: (u·v)^(n) = Σ_{k=0}^{n} C_n^k · u^(k) · v^(n−k), где C_n^k — биномиальные коэффициенты (n!/(k!(n−k)!)), а u^(k) и v^(n−k) — производные соответствующих порядков. Например, для n=2: (u·v)'' = u''·v + 2u'·v' + u·v''.
+
+Основное свойство формулы — её структурное сходство с биномом Ньютона, где степени заменяются порядками производных. Пример: найти третью производную y = x^2·sin(x). Здесь u = x^2, v = sin(x). Вычисляем: u' = 2x, u'' = 2, u''' = 0; v' = cos(x), v'' = −sin(x), v''' = −cos(x). Подставляя в формулу при n=3, получаем: y''' = 0·sin(x) + 3·2·cos(x) + 3·2·(−sin(x)) + 1·x^2·(−cos(x)) = 6cos(x) − 6sin(x) − x^2·cos(x).
+
+Формула Лейбница широко применяется в математическом анализе для нахождения производных сложных произведений, в теории рядов и дифференциальных уравнениях. Она связана с формулой Эйлера e^(ix) = cos(x) + i·sin(x), так как при дифференцировании произведений экспонент и тригонометрических функций возникает комбинаторика производных. <a href="/cards/1038.html" class="card-link">Формула Муавра</a> (cos(x) + i·sin(x))^n = cos(nx) + i·sin(nx) также использует биномиальное разложение, аналогичное формуле Лейбница. <a href="/cards/1031.html" class="card-link">Формула Эйлера</a> для тригонометрии, выражающая sin и cos через экспоненты, упрощает применение правила Лейбница к тригонометрическим произведениям.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

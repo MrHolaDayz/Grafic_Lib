@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#998 — Булеан</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="998" class="card-full">
+    <div class="card-id">карточка #998</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Логика и множества</span> → <span>Множества</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Булеан (или множество всех подмножеств) данного множества A — это множество, элементами которого являются все возможные подмножества A, включая пустое множество и само A.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/979.html" class="card-link">Объединение</a> <a href="/cards/980.html" class="card-link">Пересечение</a> <a href="/cards/981.html" class="card-link">Разность</a> <a href="/cards/982.html" class="card-link">Симметрическая разность</a> <a href="/cards/983.html" class="card-link">Дополнение</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Булеан множества A, обозначаемый как P(A) или 2^A, состоит из всех подмножеств A. Если |A| = n (количество элементов в A), то количество элементов в булеане равно 2^n. Формально: P(A) = { X | X ⊆ A }. Например, для A = {a, b} булеан: P(A) = { ∅, {a}, {b}, {a, b} }.
+
+Основные свойства булеана: пустое множество ∅ и само A всегда входят в P(A). Булеан замкнут относительно операций объединения, пересечения и разности: если X, Y ∈ P(A), то X ∪ Y ∈ P(A), X ∩ Y ∈ P(A), X \ Y ∈ P(A). Пример: для A = {1, 2, 3}, подмножество {1, 2} и {2, 3} дают <a href="/cards/979.html" class="card-link">Объединение</a> {1, 2, 3} ∈ P(A), <a href="/cards/980.html" class="card-link">Пересечение</a> {2} ∈ P(A), <a href="/cards/981.html" class="card-link">Разность</a> {1} ∈ P(A).
+
+Булеан широко применяется в теории множеств, комбинаторике, логике и информатике (например, для построения булевых алгебр). Связанные темы: объединение, пересечение и разность позволяют задавать операции на булеане, превращая его в булеву алгебру. <a href="/cards/983.html" class="card-link">Дополнение</a> подмножества (относительно A) также является элементом булеана, а <a href="/cards/982.html" class="card-link">Симметрическая разность</a> задаёт кольцевую структуру. Таким образом, булеан служит универсальным пространством для изучения всех подмножеств данного множества.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

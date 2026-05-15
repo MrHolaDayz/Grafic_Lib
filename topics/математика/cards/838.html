@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#838 — Признак Лейбница</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="838" class="card-full">
+    <div class="card-id">карточка #838</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Математический анализ</span> → <span>Ряды</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Признак Лейбница — это достаточное условие сходимости знакочередующихся рядов, основанное на монотонном убывании членов ряда к нулю.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/327.html" class="card-link">Первый признак</a> <a href="/cards/328.html" class="card-link">Второй признак</a> <a href="/cards/329.html" class="card-link">Третий признак</a> <a href="/cards/330.html" class="card-link">Четвертый признак равенства</a> <a href="/cards/469.html" class="card-link">Признак параллельности плоскостей</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Признак Лейбница применяется к знакочередующимся рядам вида ∑(-1)^(n-1) * a_n, где a_n > 0. Формулировка: если последовательность a_n монотонно убывает (a_(n+1) ≤ a_n) и стремится к нулю (lim a_n = 0 при n→∞), то ряд сходится. Основная формула для оценки остатка: |R_n| ≤ a_(n+1), то есть ошибка при замене суммы ряда частичной суммой не превышает первого отброшенного члена.
+
+Свойства: признак гарантирует только условную сходимость (ряд сходится, но не абсолютно). Пример: ряд 1 - 1/2 + 1/3 - 1/4 + ... = ∑(-1)^(n+1)/n сходится (к ln2), но ∑1/n расходится. Другой пример: ряд 1 - 1/√2 + 1/√3 - 1/√4 + ... также сходится по Лейбницу, хотя его абсолютный ряд расходится.
+
+Применяется в анализе для исследования сходимости функциональных рядов, в теории приближений (оценка погрешности), в физике (например, при разложении потенциалов). Связан с общими признаками сходимости: <a href="/cards/327.html" class="card-link">Первый признак</a> (сравнения), <a href="/cards/328.html" class="card-link">Второй признак</a> (Даламбера) и <a href="/cards/329.html" class="card-link">Третий признак</a> (Коши) — они проверяют абсолютную сходимость, а Лейбниц дополняет их для знакочередующихся рядов. <a href="/cards/330.html" class="card-link">Четвертый признак равенства</a> и <a href="/cards/469.html" class="card-link">Признак параллельности плоскостей</a> относятся к геометрии и не связаны с рядами.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

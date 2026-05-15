@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#766 — Формула Маклорена</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="766" class="card-full">
+    <div class="card-id">карточка #766</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Математический анализ</span> → <span>Применение производной</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Формула Маклорена — это частный случай ряда Тейлора с центром в нуле, позволяющий представить функцию в виде многочлена с остаточным членом для приближённых вычислений.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1031.html" class="card-link">Формула Эйлера</a> <a href="/cards/1038.html" class="card-link">Формула Муавра</a> <a href="/cards/1049.html" class="card-link">Формула Эйлера для тригонометрии</a> <a href="/cards/1174.html" class="card-link">Теорема Ферма</a> <a href="/cards/155.html" class="card-link">Формула сложного радикала</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Формула Маклорена представляет собой разложение функции f(x) в окрестности точки x=0 в степенной ряд: f(x) = f(0) + f'(0)x + f''(0)x^2/2! + f'''(0)x^3/3! + ... + f^(n)(0)x^n/n! + R_n(x), где R_n(x) — остаточный член в форме Лагранжа или Пеано. Например, для e^x: e^x = 1 + x + x^2/2! + x^3/3! + ... + x^n/n! + e^(θx)x^(n+1)/(n+1)!, 0<θ<1. Для sin x: sin x = x - x^3/3! + x^5/5! - ... + (-1)^k x^(2k+1)/(2k+1)! + R. Для cos x: cos x = 1 - x^2/2! + x^4/4! - ... + (-1)^k x^(2k)/(2k)! + R.
+
+Основное свойство формулы Маклорена — возможность замены сложной функции многочленом с контролируемой погрешностью. Пример: вычисление √(1+x) при малых x: √(1+x) ≈ 1 + x/2 - x^2/8. Ошибка оценивается через остаточный член. Формула позволяет находить пределы (например, lim(x→0) (sin x - x)/x^3 = -1/6) и приближённые значения функций с любой точностью.
+
+Формула Маклорена широко применяется в численных методах, физике (разложение потенциалов), теории вероятностей (аппроксимация распределений) и анализе. Она тесно связана с формулой Эйлера e^(ix) = cos x + i sin x, которая получается подстановкой ix в разложение e^x. <a href="/cards/1038.html" class="card-link">Формула Муавра</a> (cos x + i sin x)^n = cos(nx) + i sin(nx) следует из свойств экспоненты. <a href="/cards/1031.html" class="card-link">Формула Эйлера</a> для тригонометрии связывает тригонометрические функции с экспонентой, а <a href="/cards/1174.html" class="card-link">Теорема Ферма</a> и <a href="/cards/155.html" class="card-link">Формула сложного радикала</a> относятся к другим разделам анализа.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

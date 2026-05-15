@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#836 — Радикальный признак Коши</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="836" class="card-full">
+    <div class="card-id">карточка #836</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Математический анализ</span> → <span>Ряды</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Радикальный признак Коши — это критерий сходимости числовых рядов с неотрицательными членами, основанный на вычислении верхнего предела корня n-й степени из общего члена ряда.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/251.html" class="card-link">Неравенство Коши</a> <a href="/cards/327.html" class="card-link">Первый признак</a> <a href="/cards/328.html" class="card-link">Второй признак</a> <a href="/cards/329.html" class="card-link">Третий признак</a> <a href="/cards/330.html" class="card-link">Четвертый признак равенства</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Радикальный признак Коши (также известный как признак Коши в радикальной форме) применяется к рядам вида ∑ a_n, где a_n ≥ 0. Пусть существует предел (или верхний предел) C = limsup √(a_n) при n→∞. Если C < 1, ряд сходится; если C > 1, ряд расходится; если C = 1, признак не даёт ответа. В случае, когда предел существует в обычном смысле, используется lim √(a_n). Формально: если lim (a_n)^(1/n) = L, то при L < 1 ряд сходится, при L > 1 расходится.
+
+Признак особенно эффективен для рядов, общий член которых содержит степень n (например, a_n = (n/(2n+1))^n). Пример: ряд ∑ (1/n)^n — сходится, так как √( (1/n)^n ) = 1/n → 0 < 1. Другой пример: ряд ∑ (2^n / n^2) — расходится, так как √(2^n / n^2) = 2 / (n^(2/n)) → 2 > 1. При L = 1 требуется дополнительное исследование, например, с помощью признака сравнения.
+
+Радикальный признак Коши широко применяется в теории степенных рядов для нахождения радиуса сходимости: R = 1 / limsup √(|c_n|). Он связан с Неравенством Коши (для последовательностей) и с другими признаками сходимости: <a href="/cards/327.html" class="card-link">Первый признак</a> (сравнения), <a href="/cards/328.html" class="card-link">Второй признак</a> (предельный признак сравнения). В отличие от признака Даламбера, радикальный признак часто работает, когда признак Даламбера даёт L = 1. Также существует <a href="/cards/329.html" class="card-link">Третий признак</a> (интегральный) и <a href="/cards/330.html" class="card-link">Четвертый признак равенства</a> (признак сравнения с эталонными рядами).
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#1145 — Инварианты</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="1145" class="card-full">
+    <div class="card-id">карточка #1145</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Аналитическая геометрия</span> → <span>Кривые второго порядка</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Инварианты кривых второго порядка — это величины, не меняющиеся при поворотах и параллельных переносах системы координат; они позволяют однозначно определить тип и форму кривой, не завися от её положения на плоскости.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1136.html" class="card-link">Окружность</a> <a href="/cards/1137.html" class="card-link">Эллипс</a> <a href="/cards/1138.html" class="card-link">Фокусы</a> <a href="/cards/1139.html" class="card-link">Эксцентриситет</a> <a href="/cards/1140.html" class="card-link">Директрисы</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Инварианты кривых второго порядка — это числовые характеристики её общего уравнения Ax^2 + 2Bxy + Cy^2 + 2Dx + 2Ey + F = 0, которые остаются неизменными при любых ортогональных преобразованиях координат (повороте и переносе). Основные инварианты включают: первый инвариант I1 = A + C (след матрицы квадратичной формы), второй инвариант I2 = AC - B^2 (определитель матрицы квадратичной формы), и третий инвариант I3 = |A B D; B C E; D E F| (определитель полной матрицы). Для эллиптического типа (I2 > 0) и гиперболического (I2 < 0) эти инварианты позволяют отличить, например, <a href="/cards/1137.html" class="card-link">Эллипс</a> от гиперболы, а при I2 = 0 — параболу.
+
+Свойства инвариантов позволяют классифицировать кривые без построения: если I2 > 0 и I1 * I3 < 0, то кривая — эллипс; если I2 > 0 и I3 = 0 — точка; если I2 < 0 и I3 ≠ 0 — гипербола; если I2 = 0 и I3 ≠ 0 — парабола. Например, для окружности (частного случая эллипса) A = C, B = 0, поэтому I1 = 2A, I2 = A^2, а I3 = A^2F - A(D^2 + E^2). Инвариант I1 и I2 также связаны с <a href="/cards/1139.html" class="card-link">Эксцентриситет</a>ом и положением фокусов, так как определяют длины полуосей через корни характеристического уравнения λ^2 - I1λ + I2 = 0.
+
+В аналитической геометрии инварианты применяются для приведения уравнения кривой к каноническому виду без вычисления угла поворота и координат центра. Они особенно полезны при анализе кривых второго порядка, заданных в общем виде, и тесно связаны с темами фокусов и директрис: например, для эллипса <a href="/cards/1138.html" class="card-link">Фокусы</a> находятся на расстоянии √(a^2 - b^2) от центра, где a и b — полуоси, выраженные через инварианты. Свя
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#819 — Метод Лагранжа</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="819" class="card-full">
+    <div class="card-id">карточка #819</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Математический анализ</span> → <span>Дифференциальные уравнения</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Метод Лагранжа — это способ решения линейных неоднородных дифференциальных уравнений путем вариации произвольных постоянных, при котором частное решение ищется в той же форме, что и <a href="/cards/1090.html" class="card-link">Общее решение</a> однородного уравнения, но с функциями вместо констант.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1084.html" class="card-link">Метод Крамера</a> <a href="/cards/1085.html" class="card-link">Матричный метод</a> <a href="/cards/1086.html" class="card-link">Метод Гаусса</a> <a href="/cards/1087.html" class="card-link">Метод Гаусса-Жордана</a> <a href="/cards/1090.html" class="card-link">Общее решение</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Метод Лагранжа (метод вариации произвольных постоянных) применяется для нахождения частного решения линейного неоднородного дифференциального уравнения n-го порядка. Если известно <a href="/cards/1090.html" class="card-link">Общее решение</a> соответствующего однородного уравнения y_одн = C1*y1 + C2*y2 + ... + Cn*yn, то частное решение неоднородного уравнения ищется в виде y_ч = C1(x)*y1 + C2(x)*y2 + ... + Cn(x)*yn, где Ci(x) — неизвестные функции. Для их определения составляется система линейных алгебраических уравнений относительно производных Ci'(x): C1'*y1 + C2'*y2 + ... + Cn'*yn = 0, C1'*y1' + C2'*y2' + ... + Cn'*yn' = 0, ..., C1'*y1^(n-1) + C2'*y2^(n-1) + ... + Cn'*yn^(n-1) = f(x)/a0(x), где f(x) — правая часть уравнения, а a0(x) — коэффициент при старшей производной. Решая эту систему (например, методом Крамера), находят Ci'(x), затем интегрированием — сами Ci(x).
+
+Основное свойство метода — его универсальность: он работает для любых правых частей, в отличие от метода подбора, который применим только для специальных видов f(x). Пример: для уравнения y'' - y = e^x общее решение однородного y_одн = C1*e^x + C2*e^(-x). Частное решение ищем как y_ч = C1(x)*e^x + C2(x)*e^(-x). Составляем систему: C1'*e^x + C2'*e^(-x) = 0, C1'*e^x - C2'*e^(-x) = e^x. Решая, получаем C1' = 1/2, C2' = -e^(2x)/2, откуда C1 = x/2, C2 = -e^(2x)/4. Тогда y_ч = (x/2)*e^x - (1/4)*e^x = (2x-1)*e^x/4.
+
+Метод Лагранжа широко применяется в физике
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

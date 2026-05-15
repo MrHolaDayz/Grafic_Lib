@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#1172 — Функция Эйлера</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="1172" class="card-full">
+    <div class="card-id">карточка #1172</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Теория чисел</span> → <span>Сравнения</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Функция Эйлера φ(n) — это количество целых чисел от 1 до n, взаимно простых с n. Она играет ключевую роль в теории чисел, особенно в модульной арифметике и криптографии.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1031.html" class="card-link">Формула Эйлера</a> <a href="/cards/1049.html" class="card-link">Формула Эйлера для тригонометрии</a> <a href="/cards/1169.html" class="card-link">Кольцо вычетов</a> <a href="/cards/1170.html" class="card-link">Линейные сравнения</a> <a href="/cards/1171.html" class="card-link">Китайская теорема об остатках</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Функция Эйлера (или φ-функция) определяется для натурального числа n как количество целых чисел k в диапазоне 1 ≤ k ≤ n, для которых gcd(k, n) = 1. Обозначается как φ(n). Основная формула для вычисления: если n = p1^a1 * p2^a2 * ... * pk^ak (каноническое разложение на простые множители), то φ(n) = n * (1 - 1/p1) * (1 - 1/p2) * ... * (1 - 1/pk). Например, φ(12) = 12 * (1 - 1/2) * (1 - 1/3) = 12 * 1/2 * 2/3 = 4 (числа 1, 5, 7, 11). Для простого числа p: φ(p) = p - 1.
+
+Свойства функции Эйлера включают мультипликативность: если m и n взаимно просты, то φ(mn) = φ(m) * φ(n). Также важна теорема Эйлера: если gcd(a, n) = 1, то a^φ(n) ≡ 1 (mod n) — обобщение малой теоремы Ферма. Пример: для n = 10, φ(10) = 4, и 3^4 = 81 ≡ 1 (mod 10). Функция строго мультипликативна, но не полностью мультипликативна (например, φ(4) = 2, но φ(2) * φ(2) = 1 * 1 = 1, так как 2 и 2 не взаимно просты).
+
+Функция Эйлера широко применяется в криптографии (алгоритм RSA), где φ(n) используется для вычисления секретного ключа. Она связана с кольцом вычетов Z_n: φ(n) — это количество обратимых элементов в этом кольце. Также используется в решении линейных сравнений и в китайской теореме об остатках. Среди связанных тем: <a href="/cards/1031.html" class="card-link">Формула Эйлера</a> (e^{iπ} + 1 = 0) — это другое понятие из комплексного анализа, <a href="/cards/1049.html" class="card-link">Формула Эйлера для тригонометрии</a> (связь тригонометрических функций с экспонент
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#849 — Ряды Фурье</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="849" class="card-full">
+    <div class="card-id">карточка #849</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Математический анализ</span> → <span>Ряды</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Ряды Фурье — это способ представления периодической функции в виде бесконечной суммы синусоидальных и косинусоидальных функций (гармоник). Они позволяют разложить сложный сигнал на простые колебания, что широко применяется в анализе сигналов и решении дифференциальных уравнений.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/829.html" class="card-link">Числовые ряды</a> <a href="/cards/830.html" class="card-link">Частичная сумма</a> <a href="/cards/831.html" class="card-link">Сходимость ряда</a> <a href="/cards/832.html" class="card-link">Необходимый признак сходимости</a> <a href="/cards/833.html" class="card-link">Гармонический ряд</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Определение и основные формулы. Пусть f(x) — периодическая функция с периодом 2π. Её ряд Фурье записывается как: f(x) ~ a0/2 + Σ (n=1 до ∞) [an·cos(nx) + bn·sin(nx)], где коэффициенты вычисляются по формулам: a0 = (1/π) ∫_{-π}^{π} f(x) dx, an = (1/π) ∫_{-π}^{π} f(x)·cos(nx) dx, bn = (1/π) ∫_{-π}^{π} f(x)·sin(nx) dx. Для произвольного периода T используется замена переменной.
+
+Свойства и примеры. Ряд Фурье сходится к значению функции в точках непрерывности, а в точках разрыва — к полусумме левого и правого пределов (явление Гиббса). Пример: разложение функции f(x) = x на интервале (-π, π) даёт ряд: x ~ 2·[sin(x) - sin(2x)/2 + sin(3x)/3 - ...]. Если функция чётная, все bn = 0; если нечётная, an = 0. <a href="/cards/830.html" class="card-link">Частичная сумма</a> ряда (сумма первых N гармоник) приближает функцию тем точнее, чем больше N.
+
+Где применяется, связь с другими темами. Ряды Фурье используются в обработке сигналов (сжатие аудио и изображений), решении уравнений теплопроводности и колебаний, а также в квантовой механике. Они тесно связаны с числовыми рядами: коэффициенты an и bn сами образуют числовые последовательности, сходимость которых проверяется признаками (например, признак Дирихле). Понятие частичной суммы объясняет, как конечная сумма гармоник аппроксимирует функцию. <a href="/cards/831.html" class="card-link">Сходимость ряда</a> Фурье требует выполнения условий (кусочная гладкость), что связано с необходимым признаком сходимости. Также <a href="/cards/833.html" class="card-link">Гармонический ряд</a> (1/n) часто возникает при оценке скорости убывания коэффициентов.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#782 — Формула интегрирования по частям</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="782" class="card-full">
+    <div class="card-id">карточка #782</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Математический анализ</span> → <span>Интегралы</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Формула интегрирования по частям — это метод вычисления интегралов, основанный на производной произведения функций, который позволяет свести сложный интеграл к более простому.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1031.html" class="card-link">Формула Эйлера</a> <a href="/cards/1038.html" class="card-link">Формула Муавра</a> <a href="/cards/1049.html" class="card-link">Формула Эйлера для тригонометрии</a> <a href="/cards/1070.html" class="card-link">Разложение по строке</a> <a href="/cards/1071.html" class="card-link">Разложение по столбцу</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Формула интегрирования по частям выводится из правила дифференцирования произведения: d(uv) = u dv + v du. Интегрируя обе части, получаем основную формулу: ∫ u dv = uv - ∫ v du. Здесь u = u(x) и v = v(x) — дифференцируемые функции. Для определенного интеграла формула принимает вид: ∫_a^b u dv = uv|_a^b - ∫_a^b v du. Ключевой момент — правильный выбор u и dv, обычно u выбирают так, чтобы её производная была проще, а dv — легко интегрируемым.
+
+Свойства метода: он эффективен для интегралов, содержащих произведение функций, например, степенной и показательной, логарифмической или тригонометрической. Пример: ∫ x e^x dx. Положим u = x, dv = e^x dx, тогда du = dx, v = e^x. По формуле: ∫ x e^x dx = x e^x - ∫ e^x dx = x e^x - e^x + C. Другой пример: ∫ ln x dx. Берем u = ln x, dv = dx, получаем du = (1/x) dx, v = x, тогда ∫ ln x dx = x ln x - ∫ x * (1/x) dx = x ln x - x + C. В некоторых случаях метод применяется повторно.
+
+Формула интегрирования по частям широко применяется в математическом анализе, физике и инженерии для вычисления интегралов от логарифмов, обратных тригонометрических функций, а также в выводе рекуррентных соотношений. Она связана с другими темами: например, при выводе Формулы Эйлера e^{ix} = cos x + i sin x через интегрирование по частям получают интегралы от экспонент и тригонометрических функций. <a href="/cards/1038.html" class="card-link">Формула Муавра</a> (cos x + i sin x)^n = cos(nx) + i sin(nx) также использует подобные интегралы. <a href="/cards/1031.html" class="card-link">Формула Эйлера</a> для тригонометрии, выражающая sin и cos через экспоненты, может быть проинтегрирована по частям для нахождения первообразных. Кроме того, метод применяется в разложении по строке или столбцу при интегрировании матричных функций, хотя это более узкая тема.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

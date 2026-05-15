@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#107 — Деление многочленов уголком</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="107" class="card-full">
+    <div class="card-id">карточка #107</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Алгебра</span> → <span>Выражения</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Деление многочленов уголком — это алгоритм, позволяющий разделить один многочлен на другой (ненулевой), представив результат в виде частного и остатка, аналогично делению чисел в столбик.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/102.html" class="card-link">Одночлены</a> <a href="/cards/103.html" class="card-link">Многочлены</a> <a href="/cards/1036.html" class="card-link">Деление</a> <a href="/cards/104.html" class="card-link">Степень многочлена</a> <a href="/cards/1045.html" class="card-link">Основная теорема алгебры</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    <a href="/cards/1036.html" class="card-link">Деление</a> многочленов уголком (или деление столбиком) — это процедура, которая для двух многочленов A(x) и B(x) (где B(x) не равен нулю) находит такие <a href="/cards/103.html" class="card-link">Многочлены</a> Q(x) (частное) и R(x) (остаток), что A(x) = B(x) * Q(x) + R(x), причем степень R(x) строго меньше степени B(x). Основная формула выглядит так: A(x) / B(x) = Q(x) + R(x)/B(x). Степень частного Q(x) равна разности степеней делимого и делителя, если деление возможно без остатка.
+
+Свойства алгоритма: он всегда выполним, если делитель не равен нулю. Пример: разделим (2x^3 + 3x^2 - 5x + 1) на (x - 2). Первый шаг: делим старший член делимого (2x^3) на старший член делителя (x), получаем 2x^2. Умножаем делитель на 2x^2, вычитаем из делимого, получаем остаток 7x^2 - 5x + 1. Повторяем: делим 7x^2 на x, получаем 7x, умножаем и вычитаем, получаем 9x + 1. Делим 9x на x, получаем 9, остаток 19. Итог: Q(x) = 2x^2 + 7x + 9, R(x) = 19.
+
+Деление многочленов уголком применяется в алгебре для упрощения выражений, решения уравнений высших степеней (например, при разложении на множители с помощью теоремы Безу), а также в анализе для разложения рациональных дробей на простейшие. Связанные темы: <a href="/cards/102.html" class="card-link">Одночлены</a> (как составные части многочленов), Многочлены (объект деления), Деление (общая арифметическая операция), <a href="/cards/104.html" class="card-link">Степень многочлена</a> (определяет порядок действий), а также <a href="/cards/1045.html" class="card-link">Основная теорема алгебры</a>, которая гарантирует существование корней и, следовательно, возможность деления на линейные множители.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

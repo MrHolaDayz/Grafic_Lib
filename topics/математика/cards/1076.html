@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#1076 — След матрицы</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="1076" class="card-full">
+    <div class="card-id">карточка #1076</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Линейная алгебра</span> → <span>Матрицы</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    След матрицы — это сумма элементов главной диагонали квадратной матрицы, обозначается как tr(A) или Sp(A).
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1051.html" class="card-link">Определение матрицы</a> <a href="/cards/1052.html" class="card-link">Виды матриц</a> <a href="/cards/1053.html" class="card-link">Квадратная матрица</a> <a href="/cards/1054.html" class="card-link">Единичная матрица</a> <a href="/cards/1055.html" class="card-link">Нулевая матрица</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Определение и основные формулы: След матрицы A размера n×n вычисляется как сумма элементов a_ii, где i=1,...,n: tr(A) = Σ_{i=1}^{n} a_ii. Например, для матрицы A = [[2, 5], [3, 4]] след равен 2+4=6. Для единичной матрицы I_n след равен n, а для нулевой матрицы — 0.
+
+Свойства и примеры: След обладает свойством линейности: tr(cA) = c·tr(A) и tr(A+B) = tr(A)+tr(B). Важное свойство: для матриц A и B подходящих размеров tr(AB) = tr(BA), даже если AB ≠ BA. След также инвариантен относительно преобразования подобия: tr(P^{-1}AP) = tr(A). Пример: для матриц A = [[1, 2], [0, 3]] и B = [[4, 0], [1, 5]] имеем tr(AB) = tr([[6, 10], [3, 15]]) = 21, и tr(BA) = tr([[4, 8], [1, 17]]) = 21.
+
+Где применяется, связь с другими темами: След используется в теории инвариантов, при вычислении дисперсии в статистике (как сумма собственных значений ковариационной матрицы), в квантовой механике (след оператора плотности), а также в машинном обучении для регуляризации (след матрицы Гессе). След тесно связан с определением матрицы — он определен только для квадратных матриц, которые являются одним из видов матриц. Понимание следа требует знания структуры квадратной матрицы, где элементы расположены по строкам и столбцам.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

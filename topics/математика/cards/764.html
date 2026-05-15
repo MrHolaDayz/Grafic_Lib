@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#764 — Теорема Коши</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="764" class="card-full">
+    <div class="card-id">карточка #764</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Математический анализ</span> → <span>Применение производной</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Теорема Коши (теорема о среднем значении) утверждает, что для двух непрерывных на отрезке [a, b] и дифференцируемых на интервале (a, b) функций f(x) и g(x), при условии g'(x) ≠ 0 на (a, b), существует точка c ∈ (a, b), такая что (f(b) − f(a)) / (g(b) − g(a)) = f'(c) / g'(c).
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1045.html" class="card-link">Основная теорема алгебры</a> <a href="/cards/1046.html" class="card-link">Теорема Руше</a> <a href="/cards/1075.html" class="card-link">Теорема о ранге</a> <a href="/cards/1081.html" class="card-link">Теорема Гамильтона-Кэли</a> <a href="/cards/1088.html" class="card-link">Теорема Кронекера-Капелли</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Теорема Коши является обобщением теоремы Лагранжа о среднем значении. Формально, пусть функции f и g непрерывны на отрезке [a, b] и дифференцируемы на интервале (a, b), причем g'(x) ≠ 0 для всех x ∈ (a, b). Тогда существует точка c ∈ (a, b), для которой выполняется равенство: (f(b) − f(a)) / (g(b) − g(a)) = f'(c) / g'(c). Если g(x) = x, теорема сводится к классической теореме Лагранжа: f(b) − f(a) = f'(c)(b − a). Формула также может быть записана как [f(b) − f(a)] g'(c) = [g(b) − g(a)] f'(c).
+
+Основное свойство теоремы — она устанавливает связь между приращениями двух функций и их производными в одной внутренней точке. Пример: пусть f(x) = x^2, g(x) = x^3 на отрезке [0, 1]. Тогда f(1) − f(0) = 1, g(1) − g(0) = 1, f'(x) = 2x, g'(x) = 3x^2. Уравнение 1/1 = 2c / (3c^2) дает 1 = 2/(3c), откуда c = 2/3, что лежит в (0, 1). Другой пример: если g(x) = e^x, то теорема позволяет оценить отношение приращений экспоненты и другой функции.
+
+Теорема Коши используется для доказательства правила Лопиталя при вычислении пределов вида 0/0 или ∞/∞. Она также применяется в численных методах (например, для оценки погрешности интерполяции) и в теории приближений. Связанные темы: <a href="/cards/1045.html" class="card-link">Основная теорема алгебры</a> (доказывается через анализ, опирающийся на теорему Коши в комплексной плоскости), <a href="/cards/1046.html" class="card-link">Теорема Руше</a> (использует теорему Коши для подсчета
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#653 — Метод вспомогательного угла</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="653" class="card-full">
+    <div class="card-id">карточка #653</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Тригонометрия</span> → <span>Уравнения</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Метод вспомогательного угла — это способ решения тригонометрических уравнений вида a·sin(x) + b·cos(x) = c, основанный на замене коэффициентов a и b на синус и косинус некоторого угла φ.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1084.html" class="card-link">Метод Крамера</a> <a href="/cards/1085.html" class="card-link">Матричный метод</a> <a href="/cards/1086.html" class="card-link">Метод Гаусса</a> <a href="/cards/1087.html" class="card-link">Метод Гаусса-Жордана</a> <a href="/cards/123.html" class="card-link">Метод группировки</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Метод вспомогательного угла применяется для преобразования линейной комбинации синуса и косинуса в одну тригонометрическую функцию. Основная формула: a·sin(x) + b·cos(x) = R·sin(x + φ), где R = √(a^2 + b^2), а угол φ определяется из условий: sin(φ) = b/R, cos(φ) = a/R. Альтернативно можно использовать формулу R·cos(x - φ). Это позволяет свести уравнение a·sin(x) + b·cos(x) = c к простому виду sin(x + φ) = c/R, который решается стандартными методами.
+
+Свойства метода: он применим только при условии |c| ≤ R, иначе уравнение не имеет решений. Пример: решить 3·sin(x) + 4·cos(x) = 5. Здесь R = √(3^2 + 4^2) = 5, cos(φ) = 3/5, sin(φ) = 4/5, тогда уравнение принимает вид 5·sin(x + φ) = 5, то есть sin(x + φ) = 1, откуда x + φ = π/2 + 2πk, x = π/2 - φ + 2πk. Метод особенно удобен при решении тригонометрических уравнений в физике (например, при сложении колебаний) и в инженерных расчетах.
+
+Метод вспомогательного угла относится к тригонометрии и часто используется при решении систем уравнений, где также применяются <a href="/cards/1084.html" class="card-link">Метод Крамера</a> (для нахождения определителей), <a href="/cards/1085.html" class="card-link">Матричный метод</a> (для записи систем в матричной форме) и <a href="/cards/1086.html" class="card-link">Метод Гаусса</a> (для приведения систем к треугольному виду). Однако в отличие от этих методов, работающих с линейными алгебраическими системами, метод вспомогательного угла ориентирован исключительно на тригонометрические выражения. Связь между ними проявляется в задачах, где тригонометрические уравнения возникают после решения линейных систем, например, при анализе гармонических процессов.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

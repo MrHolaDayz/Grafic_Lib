@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#790 — Интегральные суммы</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="790" class="card-full">
+    <div class="card-id">карточка #790</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Математический анализ</span> → <span>Интегралы</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Интегральные суммы — это суммы вида S = Σ f(ξ_i) Δx_i, используемые для приближённого вычисления определённых интегралов и являющиеся основой интегрального исчисления.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/111.html" class="card-link">Квадрат суммы</a> <a href="/cards/114.html" class="card-link">Куб суммы</a> <a href="/cards/118.html" class="card-link">Квадрат суммы трех слагаемых</a> <a href="/cards/605.html" class="card-link">Синус суммы</a> <a href="/cards/606.html" class="card-link">Косинус суммы</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Интегральная сумма (сумма Римана) для функции f(x) на отрезке [a, b] строится следующим образом: отрезок разбивается на n частичных отрезков [x_{i-1}, x_i] длиной Δx_i, на каждом из которых выбирается произвольная точка ξ_i. Тогда интегральная сумма определяется как S_n = Σ_{i=1}^{n} f(ξ_i) Δx_i. Если существует предел таких сумм при стремлении максимальной длины разбиения к нулю, то он называется определённым интегралом: ∫_a^b f(x) dx = lim_{max Δx_i→0} Σ f(ξ_i) Δx_i.
+
+Основные свойства интегральных сумм: они линейны по функции, аддитивны по отрезку интегрирования, и их значение зависит от выбора точек ξ_i. Важное свойство — при стремлении разбиения к бесконечно мелкому, сумма сходится к интегралу для непрерывных функций. Пример: для f(x)=x на [0,1] с равномерным разбиением и выбором правых концов получаем S_n = (1/n) Σ_{i=1}^{n} (i/n) = (n+1)/(2n) → 1/2, что совпадает с ∫_0^1 x dx.
+
+Интегральные суммы широко применяются в физике для вычисления работы, массы, заряда, а также в экономике и теории вероятностей. Они связывают дискретные суммы с непрерывными интегралами. В отличие от формул сокращённого умножения, таких как <a href="/cards/111.html" class="card-link">Квадрат суммы</a> (a+b)^2 = a^2 + 2ab + b^2, <a href="/cards/114.html" class="card-link">Куб суммы</a> (a+b)^3 = a^3 + 3a^2 b + 3ab^2 + b^3 и квадрат суммы трёх слагаемых (a+b+c)^2 = a^2+b^2+c^2+2ab+2ac+2bc, которые являются алгебраическими тождествами, интегральные суммы представляют собой аналитический инструмент для перехода от конечных приращений к бесконечно малым.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

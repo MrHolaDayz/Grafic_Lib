@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#911 — Свойства математического ожидания</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="911" class="card-full">
+    <div class="card-id">карточка #911</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Комбинаторика и вероятность</span> → <span>Теория вероятностей</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Свойства математического ожидания — это набор правил, описывающих линейность и аддитивность среднего значения случайной величины, а также его поведение при преобразованиях.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1021.html" class="card-link">Свойства сопряженных чисел</a> <a href="/cards/1025.html" class="card-link">Свойства модуля</a> <a href="/cards/1061.html" class="card-link">Свойства транспонирования</a> <a href="/cards/1065.html" class="card-link">Свойства операций</a> <a href="/cards/1067.html" class="card-link">Свойства определителя</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Математическое ожидание (среднее значение) случайной величины X определяется как E[X] = Σ x_i * p_i для дискретной величины, где p_i — вероятности, и E[X] = ∫ x * f(x) dx для непрерывной, где f(x) — плотность распределения. Основополагающее свойство — линейность: E[aX + b] = a*E[X] + b, где a и b — константы. Также для любых двух случайных величин X и Y выполняется E[X + Y] = E[X] + E[Y] (аддитивность). Если X и Y независимы, то E[XY] = E[X] * E[Y].
+
+Ключевые свойства включают: 1) E[c] = c (математическое ожидание константы равно самой константе). 2) Если X ≥ 0, то E[X] ≥ 0 (неотрицательность). 3) Для произвольной функции g(X) математическое ожидание вычисляется как E[g(X)] = Σ g(x_i) * p_i (или интеграл). Пример: если X принимает значения 1 и 3 с вероятностями 0.5 и 0.5, то E[X] = 2, а E[2X + 1] = 2*2 + 1 = 5, что подтверждает линейность. <a href="/cards/1021.html" class="card-link">Свойства сопряженных чисел</a> и модуля здесь не применяются напрямую, но аналогия есть: подобно тому, как модуль сохраняет неравенства, математическое ожидание сохраняет порядок (если X ≤ Y, то E[X] ≤ E[Y]).
+
+Математическое ожидание широко используется в статистике, теории рисков, финансовой математике и машинном обучении. Оно служит основой для вычисления дисперсии (Var[X] = E[X^2] - (E[X])^2) и ковариации. Связь с другими темами: <a href="/cards/1061.html" class="card-link">Свойства транспонирования</a> (в матричной форме ожидание вектора — это вектор ожиданий), а <a href="/cards/1067.html" class="card-link">Свойства определителя</a> могут появляться при анализе ковариационных матриц. Свойства сопряженных чисел и модуля редко пересекаются с ожиданием, но в комплексных случайных величинах E[z] = E[x] + i*E[y], а модуль |E[z]| ≤ E[|z|] (неравенство Йенсена).
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

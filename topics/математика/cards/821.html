@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#821 — Уравнения в полных дифференциалах</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="821" class="card-full">
+    <div class="card-id">карточка #821</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Математический анализ</span> → <span>Дифференциальные уравнения</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Уравнение в полных дифференциалах — это дифференциальное уравнение вида M(x, y)dx + N(x, y)dy = 0, для которого существует такая функция F(x, y), что её полный дифференциал dF равен левой части уравнения.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1037.html" class="card-link">Возведение в степень</a> <a href="/cards/1043.html" class="card-link">Квадратные уравнения</a> <a href="/cards/1044.html" class="card-link">Кубические уравнения</a> <a href="/cards/1047.html" class="card-link">Комплексные числа в геометрии</a> <a href="/cards/1090.html" class="card-link">Общее решение</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Уравнением в полных дифференциалах называется уравнение M(x, y)dx + N(x, y)dy = 0, для которого выполнено условие ∂M/∂y = ∂N/∂x. Если это условие выполняется, то существует функция F(x, y), такая что ∂F/∂x = M и ∂F/∂y = N. <a href="/cards/1090.html" class="card-link">Общее решение</a> уравнения записывается в неявном виде F(x, y) = C, где C — произвольная постоянная. Для нахождения F интегрируют M по x или N по y, а затем уточняют функцию, используя второе частное производное.
+
+Свойства: если условие полного дифференциала не выполняется, уравнение можно привести к полному дифференциалу с помощью интегрирующего множителя. Пример: уравнение 2x dx + 2y dy = 0 удовлетворяет условию, так как ∂(2x)/∂y = 0 и ∂(2y)/∂x = 0. Интегрируя, получаем F(x, y) = x^2 + y^2, и общее решение x^2 + y^2 = C. Другой пример: (3x^2 + y) dx + (x - 2y) dy = 0 — проверка показывает, что ∂M/∂y = 1, ∂N/∂x = 1, условие выполнено, решение F(x, y) = x^3 + xy - y^2 = C.
+
+Уравнения в полных дифференциалах широко применяются в физике (потенциальные поля, термодинамика) и механике, где полный дифференциал описывает работу консервативных сил. Связь с другими темами: при решении часто приходится использовать <a href="/cards/1037.html" class="card-link">Возведение в степень</a> для интегрирования степенных функций, а также решать <a href="/cards/1043.html" class="card-link">Квадратные уравнения</a> и <a href="/cards/1044.html" class="card-link">Кубические уравнения</a>, когда общее решение F(x, y) = C сводится к алгебраическому уравнению относительно одной переменной. Кроме того, понимание полного дифференциала опирается на анализ функций нескольких переменных и частные производные.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

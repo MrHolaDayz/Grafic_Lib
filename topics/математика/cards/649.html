@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#649 — Однородные уравнения первой степени</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="649" class="card-full">
+    <div class="card-id">карточка #649</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Тригонометрия</span> → <span>Уравнения</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Однородные уравнения первой степени — это тригонометрические уравнения вида a·sin(x) + b·cos(x) = 0, где a и b — ненулевые константы, которые решаются делением на cos(x) или sin(x) при условии, что они не равны нулю.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1015.html" class="card-link">Степени мнимой единицы</a> <a href="/cards/1043.html" class="card-link">Квадратные уравнения</a> <a href="/cards/1044.html" class="card-link">Кубические уравнения</a> <a href="/cards/1082.html" class="card-link">Однородные системы</a> <a href="/cards/1175.html" class="card-link">Линейные диофантовы уравнения</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Однородные уравнения первой степени в тригонометрии имеют стандартный вид a·sin(x) + b·cos(x) = 0, где a и b — действительные числа, не равные нулю одновременно. Основной метод решения заключается в делении обеих частей уравнения на cos(x) (при условии, что cos(x) ≠ 0). В результате получаем уравнение a·tg(x) + b = 0, откуда tg(x) = -b/a. После этого находим x = arctg(-b/a) + π·n, n ∈ Z. Важно проверить случай, когда cos(x) = 0, то есть x = π/2 + π·k, так как при этом деление на cos(x) недопустимо; если sin(π/2 + π·k) = 0, то такие значения также являются корнями. Аналогично можно делить на sin(x), если это удобнее.
+
+Свойства однородных уравнений первой степени: они всегда имеют решения, если a и b не равны нулю одновременно; их графическая интерпретация — пересечение прямой и единичной окружности. Пример: решим уравнение 2·sin(x) - 3·cos(x) = 0. Делим на cos(x): 2·tg(x) - 3 = 0, tg(x) = 3/2, x = arctg(3/2) + π·n. Проверка при cos(x)=0: x = π/2 + π·k, подставляем в исходное: 2·sin(π/2) - 3·0 = 2 ≠ 0, значит, эти точки не являются корнями. Ответ: x = arctg(3/2) + π·n.
+
+Однородные уравнения первой степени широко применяются в физике (например, при сложении гармонических колебаний), в инженерных расчётах и в анализе периодических процессов. Эти уравнения тесно связаны с квадратными и кубическими уравнениями, так как часто сводятся к ним после подстановок или при решении более сложных однородных систем. Знание степеней мнимой единицы (i^2 = -1, i^3 = -i, i^4 = 1) полезно при переходе к комплексной форме записи тригонометрических функций
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

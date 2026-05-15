@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#875 — Числа Стирлинга первого рода</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="875" class="card-full">
+    <div class="card-id">карточка #875</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Комбинаторика и вероятность</span> → <span>Комбинаторика</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Числа Стирлинга первого рода — это коэффициенты в разложении факториала (x)_n = x(x-1)...(x-n+1) по степеням x, обозначаемые s(n,k) или c(n,k), которые показывают количество перестановок n элементов с k циклами.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1020.html" class="card-link">Сопряженные числа</a> <a href="/cards/1024.html" class="card-link">Модуль комплексного числа</a> <a href="/cards/1026.html" class="card-link">Аргумент комплексного числа</a> <a href="/cards/1047.html" class="card-link">Комплексные числа в геометрии</a> <a href="/cards/1166.html" class="card-link">Простые числа</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Числа Стирлинга первого рода, обозначаемые s(n,k) (иногда c(n,k)), определяются как коэффициенты в разложении убывающего факториала: (x)_n = x(x-1)...(x-n+1) = Σ_{k=0}^n s(n,k) x^k. Они также могут быть определены рекуррентно: s(n,k) = s(n-1,k-1) - (n-1) * s(n-1,k) с начальными условиями s(0,0)=1, s(n,0)=0 для n>0 и s(n,k)=0 для k>n. Знак чисел Стирлинга первого рода чередуется: s(n,k) = (-1)^{n-k} * |s(n,k)|, где |s(n,k)| — это число Стирлинга первого рода без знака, равное количеству перестановок n элементов, содержащих ровно k циклов.
+
+Свойства чисел Стирлинга первого рода включают: s(n,1) = (-1)^{n-1} (n-1)!, s(n,n) = 1, s(n,n-1) = -C(n,2). Например, для n=4: (x)_4 = x^4 - 6x^3 + 11x^2 - 6x, поэтому s(4,1)=-6, s(4,2)=11, s(4,3)=-6, s(4,4)=1. Они тесно связаны с числами Стирлинга второго рода через ортогональные соотношения и с факториалами, а также с гармоническими числами.
+
+Числа Стирлинга первого рода применяются в комбинаторике для подсчета перестановок с заданным числом циклов, в теории вероятностей (например, в задачах о случайных перестановках), в анализе алгоритмов (анализ сортировки), а также в алгебре при работе с симметрическими многочленами и тождествами. Связь с другими темами: <a href="/cards/1020.html" class="card-link">Сопряженные числа</a> могут возникать при рассмотрении комплексных корней характеристических многочленов, связанных с рекуррентными соотношениями. <a href="/cards/1024.html" class="card-link">Модуль комплексного числа</a> и <a href="/cards/1026.html" class="card-link">Аргумент комплексного числа</a> используются при анализе производящих
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

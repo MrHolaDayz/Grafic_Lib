@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#982 — Симметрическая разность</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="982" class="card-full">
+    <div class="card-id">карточка #982</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Логика и множества</span> → <span>Множества</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Симметрическая разность двух множеств — это операция, результатом которой является множество элементов, входящих ровно в одно из исходных множеств (то есть элементы, принадлежащие либо первому, либо второму множеству, но не их пересечению).
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/113.html" class="card-link">Разность квадратов</a> <a href="/cards/117.html" class="card-link">Разность кубов</a> <a href="/cards/621.html" class="card-link">Разность синусов</a> <a href="/cards/623.html" class="card-link">Разность косинусов</a> <a href="/cards/979.html" class="card-link">Объединение</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Симметрическая разность множеств A и B обозначается как A Δ B и определяется формулой: A Δ B = (A \ B) ∪ (B \ A) = (A ∪ B) \ (A ∩ B). Иными словами, это множество элементов, которые принадлежат объединению, но не принадлежат пересечению. В отличие от обычной разности, симметрическая разность коммутативна: A Δ B = B Δ A. Также она ассоциативна: (A Δ B) Δ C = A Δ (B Δ C). Важное свойство: A Δ A = ∅, A Δ ∅ = A.
+
+Пример: пусть A = {1, 2, 3, 4}, B = {3, 4, 5, 6}. Тогда A \ B = {1, 2}, B \ A = {5, 6}, следовательно, A Δ B = {1, 2, 5, 6}. Другой пример: если A = {x | x ≥ 0}, B = {x | x ≤ 0}, то A Δ B = {x | x ≠ 0} — все числа, кроме нуля. Симметрическая разность тесно связана с логической операцией "исключающее ИЛИ" (XOR) в булевой алгебре: характеристическая функция симметрической разности равна XOR характеристических функций множеств.
+
+Симметрическая разность широко применяется в теории множеств, комбинаторике, теории меры (как основа для определения кольца множеств), а также в компьютерных науках для обработки данных и сравнения наборов. Она позволяет выделить уникальные элементы двух коллекций. Связанные темы: <a href="/cards/113.html" class="card-link">Разность квадратов</a> (a^2 - b^2 = (a - b)(a + b)) и <a href="/cards/117.html" class="card-link">Разность кубов</a> (a^3 - b^3 = (a - b)(a^2 + ab + b^2)) являются алгебраическими формулами для разности чисел, а не для множеств, однако по духу они также описывают "вычитание" с сохранением структуры. <a href="/cards/621.html" class="card-link">Разность синусов</a> (sin a - sin b = 2 cos((a+b)/2) sin((a-b)/2)) — тригонометрическое тождество, которое, как и симметрическая разность, преобразует разность в произведение,
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

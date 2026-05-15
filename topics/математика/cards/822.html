@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#822 — Интегрирующий множитель</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="822" class="card-full">
+    <div class="card-id">карточка #822</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Математический анализ</span> → <span>Дифференциальные уравнения</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Интегрирующий множитель — это функция, которая умножается на дифференциальное уравнение, чтобы сделать его полным дифференциалом, что позволяет применить методы интегрирования для нахождения общего решения.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1090.html" class="card-link">Общее решение</a> <a href="/cards/1091.html" class="card-link">Частное решение</a> <a href="/cards/810.html" class="card-link">Основные понятия</a> <a href="/cards/811.html" class="card-link">Порядок уравнения</a> <a href="/cards/814.html" class="card-link">Задача Коши</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Интегрирующий множитель (обозначается μ(x, y)) — это ненулевая функция, при умножении на которую уравнение вида M(x, y)dx + N(x, y)dy = 0 превращается в полный дифференциал. Для уравнения первого порядка P(x, y)dx + Q(x, y)dy = 0 условие полноты: ∂P/∂y = ∂Q/∂x. Если это не выполняется, интегрирующий множитель μ находится из уравнения: (∂(μP)/∂y) = (∂(μQ)/∂x). В простых случаях μ зависит только от x или только от y: если (∂P/∂y - ∂Q/∂x)/Q = f(x), то μ = e^(∫f(x)dx); если (∂Q/∂x - ∂P/∂y)/P = g(y), то μ = e^(∫g(y)dy).
+
+Основное свойство: после умножения на μ уравнение становится полным, и его решение сводится к нахождению функции F(x, y) такой, что dF = μP dx + μQ dy = 0, откуда F(x, y) = C — <a href="/cards/1090.html" class="card-link">Общее решение</a>. Пример: уравнение ydx - xdy = 0. Здесь P = y, Q = -x, ∂P/∂y = 1, ∂Q/∂x = -1 — не полное. Находим μ = 1/y^2 (зависит от y). Умножаем: (1/y)dx - (x/y^2)dy = 0. Проверка: ∂(1/y)/∂y = -1/y^2, ∂(-x/y^2)/∂x = -1/y^2 — полное. Решение: d(x/y) = 0, общее решение x/y = C.
+
+Интегрирующий множитель применяется для решения дифференциальных уравнений первого порядка, которые не являются полными, но могут быть приведены к таковым. Это важный инструмент в математическом анализе и физике (например, в термодинамике). Связанные темы: Общее решение — результат интегрирования после применения множителя; <a href="/cards/1091.html" class="card-link">Частное решение</a> — получается из общего при задании начального условия (<a href="/cards/814.html" class="card-link">Задача Коши</a>). <a href="/cards/810.html" class="card-link">Основные понятия</a> включают полный дифференциал, <a href="/cards/811.html" class="card-link">Порядок уравнения</a> (первый порядок) и условия интегрируемости.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

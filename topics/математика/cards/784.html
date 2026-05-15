@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#784 — Разложение на простейшие дроби</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="784" class="card-full">
+    <div class="card-id">карточка #784</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Математический анализ</span> → <span>Интегралы</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Разложение на простейшие дроби — это метод представления рациональной дроби (отношения двух многочленов) в виде суммы более простых дробей, что значительно упрощает интегрирование и другие операции.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1048.html" class="card-link">Поворот на комплексной плоскости</a> <a href="/cards/1063.html" class="card-link">Умножение матрицы на число</a> <a href="/cards/1070.html" class="card-link">Разложение по строке</a> <a href="/cards/1071.html" class="card-link">Разложение по столбцу</a> <a href="/cards/1110.html" class="card-link">Умножение на число</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Разложение на простейшие дроби применяется к правильным рациональным дробям, где степень числителя меньше степени знаменателя. Основная идея заключается в том, чтобы разложить знаменатель на множители (линейные и квадратичные, возможно, с комплексными корнями) и представить исходную дробь как сумму дробей вида A/(x-a)^k и (Bx+C)/(x^2+px+q)^k, где k — натуральное число. Например, дробь (3x+5)/(x^2-3x+2) раскладывается как A/(x-1) + B/(x-2). Для этого находят неизвестные коэффициенты A, B, решая систему уравнений.
+
+Свойства метода: он гарантирует единственность разложения для любой правильной рациональной дроби. Пример: разложим (x+1)/(x^2-1). Знаменатель раскладывается как (x-1)(x+1), поэтому (x+1)/(x^2-1) = A/(x-1) + B/(x+1). Умножая на общий знаменатель, получаем x+1 = A(x+1) + B(x-1). Подставляя x=1, находим A=1; подставляя x=-1, находим B=0. Итог: (x+1)/(x^2-1) = 1/(x-1).
+
+Метод широко применяется в интегральном исчислении для интегрирования рациональных функций, а также в преобразованиях Лапласа и решении дифференциальных уравнений. Связь с другими темами: при разложении часто используют комплексные корни (<a href="/cards/1048.html" class="card-link">Поворот на комплексной плоскости</a>) для работы с квадратичными множителями. <a href="/cards/1063.html" class="card-link">Умножение матрицы на число</a> и <a href="/cards/1070.html" class="card-link">Разложение по строке</a>/столбцу относятся к линейной алгебре, но не связаны напрямую — здесь речь о разложении функций, а не матриц.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

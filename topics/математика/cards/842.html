@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#842 — Степенные ряды</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="842" class="card-full">
+    <div class="card-id">карточка #842</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Математический анализ</span> → <span>Ряды</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Степенной ряд — это бесконечная сумма вида Σ c_n (x - a)^n, где c_n — коэффициенты, а x — переменная, обобщающая понятие числового ряда на функции.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/829.html" class="card-link">Числовые ряды</a> <a href="/cards/830.html" class="card-link">Частичная сумма</a> <a href="/cards/831.html" class="card-link">Сходимость ряда</a> <a href="/cards/832.html" class="card-link">Необходимый признак сходимости</a> <a href="/cards/833.html" class="card-link">Гармонический ряд</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Степенной ряд определяется как Σ_{n=0}^{∞} c_n (x - a)^n, где a — центр сходимости, а c_n — коэффициенты. <a href="/cards/830.html" class="card-link">Частичная сумма</a> S_N(x) = Σ_{n=0}^{N} c_n (x - a)^n является многочленом. Важной характеристикой является радиус сходимости R, который определяет интервал (a - R, a + R), где ряд сходится абсолютно. Для нахождения R часто используют признак Даламбера или Коши: R = lim_{n→∞} |c_n / c_{n+1}| (если предел существует).
+
+Основное свойство степенных рядов — равномерная сходимость на любом отрезке внутри интервала сходимости, что позволяет почленно дифференцировать и интегрировать ряд. Пример: геометрический ряд Σ x^n = 1/(1 - x) при |x| < 1. Другой пример — разложение экспоненты: e^x = Σ x^n / n! (сходится при всех x). <a href="/cards/831.html" class="card-link">Сходимость ряда</a> проверяется с помощью признаков, аналогичных числовым рядам, например, <a href="/cards/832.html" class="card-link">Необходимый признак сходимости</a> (общий член должен стремиться к нулю), но он не достаточен (как в гармоническом ряде).
+
+Степенные ряды широко применяются в анализе для представления функций (ряды Тейлора и Маклорена), решения дифференциальных уравнений и в численных методах. Они тесно связаны с числовыми рядами, так как при фиксированном x степенной ряд превращается в числовой. Частичная сумма позволяет приближать функцию многочленом, а сходимость ряда определяет точность такого приближения. Понимание сходимости ряда необходимо для корректного использования степенных разложений.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#49 — НОД</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="49" class="card-full">
+    <div class="card-id">карточка #49</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Арифметика</span> → <span>Делимость</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    НОД (наибольший общий делитель) двух или более целых чисел — это наибольшее натуральное число, на которое каждое из данных чисел делится без остатка.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1166.html" class="card-link">Простые числа</a> <a href="/cards/1171.html" class="card-link">Китайская теорема об остатках</a> <a href="/cards/1172.html" class="card-link">Функция Эйлера</a> <a href="/cards/35.html" class="card-link">Признаки делимости на 2</a> <a href="/cards/36.html" class="card-link">на 3</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Наибольший общий делитель (НОД) чисел a и b — это наибольшее целое число d, такое что d|a и d|b. Обозначается как НОД(a, b) или gcd(a, b). Основной метод нахождения НОД — алгоритм Евклида: НОД(a, b) = НОД(b, a mod b). Для чисел, разложенных на простые множители, НОД равен произведению общих простых множителей в минимальных степенях: если a = p1^α1 * p2^α2 * ... * pk^αk, b = p1^β1 * p2^β2 * ... * pk^βk, то НОД(a, b) = p1^min(α1,β1) * p2^min(α2,β2) * ... * pk^min(αk,βk). Важное свойство: НОД(a, b) * НОК(a, b) = a * b.
+
+Свойства НОД: НОД(a, b) = НОД(b, a); НОД(a, 0) = |a|; НОД(a, b) = НОД(a, b - a); если d = НОД(a, b), то существуют целые x и y такие, что ax + by = d (тождество Безу). Пример: НОД(12, 18) = 6, так как 12 = 2^2 * 3, 18 = 2 * 3^2, общие множители 2 и 3 в минимальных степенях — 2^1 * 3^1 = 6. Другой пример: НОД(100, 75) = 25, так как 100 = 2^2 * 5^2, 75 = 3 * 5^2, общий множитель 5^2 = 25.
+
+НОД широко применяется в теории чисел, криптографии и алгоритмах. Он лежит в основе проверки взаимной простоты чисел (если НОД(a, b) = 1, числа взаимно просты). Связан с простыми числами: разложение на простые множители — основной способ нахождения НОД для небольших чисел. НОД используется в Китайской теореме об остатках для нахождения решений систем сравнений, когда модули взаимно просты. <a href="/cards/1172.html" class="card-link">Функция Эйлера</a> φ(n), которая подсчитывает количество чисел, взаим
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

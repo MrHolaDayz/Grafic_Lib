@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#1003 — Транзитивность</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="1003" class="card-full">
+    <div class="card-id">карточка #1003</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Логика и множества</span> → <span>Отношения и функции</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Транзитивность — свойство бинарного отношения, при котором из наличия связи между элементами a и b, а также b и c, следует связь между a и c.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1000.html" class="card-link">Бинарные отношения</a> <a href="/cards/1001.html" class="card-link">Рефлексивность</a> <a href="/cards/1002.html" class="card-link">Симметричность</a> <a href="/cards/1004.html" class="card-link">Антисимметричность</a> <a href="/cards/1005.html" class="card-link">Отношение эквивалентности</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Транзитивность — одно из фундаментальных свойств бинарных отношений. Формально отношение R на множестве X называется транзитивным, если для любых элементов a, b, c из X выполняется условие: если aRb и bRc, то aRc. В математической записи это выглядит так: ∀a,b,c ∈ X: (aRb ∧ bRc) ⇒ aRc. Например, отношение «больше» (>) на множестве действительных чисел транзитивно: если a > b и b > c, то a > c. А отношение «являться родителем» не транзитивно, так как если A — родитель B, а B — родитель C, то A — дедушка или бабушка C, но не родитель.
+
+Свойства транзитивности тесно связаны с другими свойствами бинарных отношений. Вместе с <a href="/cards/1001.html" class="card-link">Рефлексивность</a>ю и <a href="/cards/1002.html" class="card-link">Симметричность</a>ю транзитивность образует <a href="/cards/1005.html" class="card-link">Отношение эквивалентности</a>, которое разбивает множество на непересекающиеся классы эквивалентности. Если же транзитивность сочетается с рефлексивностью и <a href="/cards/1004.html" class="card-link">Антисимметричность</a>ю, то получается отношение частичного порядка. Примеры транзитивных отношений: делимость (если a делится на b, а b делится на c, то a делится на c), включение множеств (если A ⊆ B и B ⊆ C, то A ⊆ C), равенство чисел.
+
+Транзитивность широко применяется в математике, информатике и логике. В теории графов транзитивное замыкание позволяет найти все достижимые вершины из данной. В программировании транзитивность используется в системах типов и в базах данных для наследования свойств. Понятие транзитивности неразрывно связано с бинарными отношениями — базовой структурой, на которой строятся рефлексивность, симметричность, антисимметричность и другие свойства, определяющие тип отношения.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

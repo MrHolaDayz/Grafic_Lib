@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#628 — Универсальная тригонометрическая подстановка</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="628" class="card-full">
+    <div class="card-id">карточка #628</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Тригонометрия</span> → <span>Формулы</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Универсальная тригонометрическая подстановка — это метод замены тригонометрических функций рациональными выражениями через тангенс половинного угла, позволяющий свести интегралы и уравнения от синуса и косинуса к алгебраическим.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1029.html" class="card-link">Тригонометрическая форма</a> <a href="/cards/604.html" class="card-link">Формулы сложения</a> <a href="/cards/605.html" class="card-link">Синус суммы</a> <a href="/cards/606.html" class="card-link">Косинус суммы</a> <a href="/cards/607.html" class="card-link">Тангенс суммы</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Универсальная тригонометрическая подстановка основана на замене t = tg(x/2). Из этой замены выводятся основные формулы: sin x = 2t/(1+t^2), cos x = (1-t^2)/(1+t^2), а также dx = 2/(1+t^2) dt (при интегрировании). Тангенс выражается как tg x = 2t/(1-t^2). Эти формулы получаются из формул синуса и косинуса двойного угла, записанных через тангенс половинного угла.
+
+Благодаря этой подстановке любое тригонометрическое выражение, рационально зависящее от sin x и cos x, превращается в рациональную функцию от t. Это свойство широко применяется при вычислении неопределенных интегралов вида ∫ R(sin x, cos x) dx, где R — рациональная функция. Также метод используется для решения тригонометрических уравнений, которые не сводятся к простым видам: например, уравнение a sin x + b cos x = c решается подстановкой t = tg(x/2). Пример: решить sin x + cos x = 1. Подставляя sin x = 2t/(1+t^2), cos x = (1-t^2)/(1+t^2), получаем (2t+1-t^2)/(1+t^2)=1, откуда 2t+1-t^2=1+t^2, то есть 2t-2t^2=0, t=0 или t=1. Возвращаясь к x: tg(x/2)=0 → x=2πk; tg(x/2)=1 → x=π/2+2πk.
+
+Подстановка тесно связана с тригонометрической формой комплексных чисел (через e^{ix} можно получить те же выражения) и с формулами сложения: формулы синуса суммы и косинуса суммы используются при её выводе. Например, sin x = sin(2·(x/2)) = 2 sin(x/2) cos(x/2), а затем выражается через t = tg(x/2). Связанные темы: <a href="/cards/1029.html" class="card-link">Тригонометрическая форма</a>, <a href="/cards/604.html" class="card-link">Формулы сложения</a>, <a href="/cards/605.html" class="card-link">Синус суммы</a>, <a href="/cards/606.html" class="card-link">Косинус суммы</a>, <a href="/cards/607.html" class="card-link">Тангенс суммы</a> — все они лежат в основе вывода универсальной
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

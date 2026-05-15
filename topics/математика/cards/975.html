@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#975 — Метод математической индукции</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="975" class="card-full">
+    <div class="card-id">карточка #975</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Логика и множества</span> → <span>Логика</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Метод математической индукции — это способ доказательства утверждений, зависящих от натурального числа n, основанный на проверке базы и переходе от n к n+1.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1084.html" class="card-link">Метод Крамера</a> <a href="/cards/1085.html" class="card-link">Матричный метод</a> <a href="/cards/1086.html" class="card-link">Метод Гаусса</a> <a href="/cards/1087.html" class="card-link">Метод Гаусса-Жордана</a> <a href="/cards/123.html" class="card-link">Метод группировки</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Метод математической индукции основан на принципе: если утверждение P(n) верно для n=1 (или начального значения) и из предположения его истинности для n=k следует истинность для n=k+1, то P(n) верно для всех натуральных n. Формально: P(1) ∧ (∀k (P(k) ⇒ P(k+1))) ⇒ ∀n P(n). В доказательствах часто используют формулу суммы: 1 + 2 + ... + n = n(n+1)/2, проверяя базу (n=1) и индукционный шаг.
+
+Свойства: метод применим только к утверждениям, формулируемым для натуральных чисел; требует строгого доказательства как базы, так и шага. Пример: доказать, что 1^2 + 2^2 + ... + n^2 = n(n+1)(2n+1)/6. База: n=1 — верно. Шаг: предположив истинность для n=k, прибавляем (k+1)^2 и преобразуем к формуле для n=k+1.
+
+Метод широко применяется в комбинаторике, теории чисел, алгоритмах (доказательство корректности рекурсивных функций). Связан с темами: <a href="/cards/1084.html" class="card-link">Метод Крамера</a> (решение систем линейных уравнений — индукция по размерности), <a href="/cards/1085.html" class="card-link">Матричный метод</a> (доказательство свойств определителей или степеней матриц), <a href="/cards/1086.html" class="card-link">Метод Гаусса</a> (индукция по числу уравнений для обоснования приведения к ступенчатому виду). В отличие от этих методов, индукция не решает системы, а доказывает общие закономерности.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

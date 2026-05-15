@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#900 — Формула Байеса</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="900" class="card-full">
+    <div class="card-id">карточка #900</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Комбинаторика и вероятность</span> → <span>Теория вероятностей</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Формула Байеса — это фундаментальная теорема теории вероятностей, которая позволяет пересчитывать вероятность гипотезы после появления нового свидетельства, используя априорные вероятности и правдоподобие.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1031.html" class="card-link">Формула Эйлера</a> <a href="/cards/1038.html" class="card-link">Формула Муавра</a> <a href="/cards/1049.html" class="card-link">Формула Эйлера для тригонометрии</a> <a href="/cards/155.html" class="card-link">Формула сложного радикала</a> <a href="/cards/188.html" class="card-link">Формула Кардано</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Формула Байеса выражается следующим образом: P(A|B)=P(B|A)*P(A)/P(B), где P(A|B) — апостериорная вероятность события A при условии B, P(B|A) — правдоподобие (вероятность B при условии A), P(A) — априорная вероятность A, а P(B) — полная вероятность события B, вычисляемая как сумма по всем гипотезам: P(B)=∑P(B|A_i)*P(A_i). Важно, что P(B)>0. В более общей форме для нескольких гипотез H_1,…,H_n, образующих полную группу событий, формула имеет вид P(H_k|D)=P(D|H_k)*P(H_k)/∑P(D|H_i)*P(H_i). 
+
+Ключевое свойство формулы — она позволяет обновлять убеждения по мере поступления данных, что делает её основой байесовского вывода. Пример: пусть есть два мешка: в первом 3 красных и 7 синих шаров, во втором — 8 красных и 2 синих. Выбирается случайный мешок, из него достаётся красный шар. Какова вероятность, что это был первый мешок? Априорные вероятности P(мешок1)=P(мешок2)=0.5. Правдоподобие P(красный|мешок1)=0.3, P(красный|мешок2)=0.8. Полная вероятность P(красный)=0.5*0.3+0.5*0.8=0.55. Тогда P(мешок1|красный)=0.5*0.3/0.55≈0.273. 
+
+Формула Байеса широко применяется в машинном обучении (наивный байесовский классификатор), медицинской диагностике, спам-фильтрации и криминалистике. Она тесно связана с теоремой умножения вероятностей и законом полной вероятности. В контексте других формул: <a href="/cards/1031.html" class="card-link">Формула Эйлера</a> e^{iθ}=cosθ+i sinθ используется в комплексном анализе и тригонометрии, <a href="/cards/1038.html" class="card-link">Формула Муавра</a> (cosθ+i sinθ)^n=cos(nθ)+i sin(nθ)
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

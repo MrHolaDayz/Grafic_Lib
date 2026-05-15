@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#200 — Симметрические системы</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="200" class="card-full">
+    <div class="card-id">карточка #200</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Алгебра</span> → <span>Системы уравнений</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Симметрические системы — это системы уравнений, в которых уравнения не меняются при перестановке переменных (например, x и y). Их решение часто сводится к замене на сумму и произведение переменных.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/1082.html" class="card-link">Однородные системы</a> <a href="/cards/1083.html" class="card-link">Неоднородные системы</a> <a href="/cards/1084.html" class="card-link">Метод Крамера</a> <a href="/cards/1086.html" class="card-link">Метод Гаусса</a> <a href="/cards/1087.html" class="card-link">Метод Гаусса-Жордана</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Симметрической системой называется система вида:
+f(x, y) = 0
+g(x, y) = 0,
+где f и g — симметрические многочлены, то есть f(x, y) = f(y, x) и g(x, y) = g(y, x). Основной метод решения — введение новых переменных: u = x + y (сумма), v = xy (произведение). Тогда любое симметрическое выражение можно выразить через u и v, например: x^2 + y^2 = u^2 - 2v. После замены система сводится к системе относительно u и v, которая решается стандартными методами.
+
+Свойства: если (x, y) — решение симметрической системы, то (y, x) — также решение. Пример: решить систему x + y = 5, xy = 6. Вводим u = 5, v = 6, тогда x и y — корни квадратного уравнения t^2 - ut + v = 0, то есть t^2 - 5t + 6 = 0, откуда t1 = 2, t2 = 3. Решения: (2, 3) и (3, 2). Для систем с тремя переменными вводят u = x+y+z, v = xy+yz+zx, w = xyz.
+
+Симметрические системы широко применяются в задачах на нахождение корней многочленов, в теории чисел и в геометрии (например, при решении задач на стороны треугольника). Они тесно связаны с однородными системами (где все члены одной степени) и неоднородными системами (где есть свободные члены). <a href="/cards/1084.html" class="card-link">Метод Крамера</a> может использоваться после линеаризации системы, если удалось свести её к линейной заменой. Связанные темы: <a href="/cards/1082.html" class="card-link">Однородные системы</a>, <a href="/cards/1083.html" class="card-link">Неоднородные системы</a>, Метод Крамера — помогают в анализе частных случаев симметрических систем.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

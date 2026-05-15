@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#873 — Комбинаторные тождества</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="873" class="card-full">
+    <div class="card-id">карточка #873</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Комбинаторика и вероятность</span> → <span>Комбинаторика</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    Комбинаторные тождества — это равенства, связывающие числа сочетаний, перестановок и факториалы, которые позволяют упрощать подсчёт количества комбинаций в различных задачах.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/859.html" class="card-link">Правило суммы</a> <a href="/cards/860.html" class="card-link">Правило произведения</a> <a href="/cards/861.html" class="card-link">Факториал</a> <a href="/cards/862.html" class="card-link">Двойной факториал</a> <a href="/cards/863.html" class="card-link">Перестановки</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    Комбинаторные тождества представляют собой равенства, которые выполняются для биномиальных коэффициентов, чисел перестановок и других комбинаторных величин. Основой многих из них является бином Ньютона: (1 + x)^n = C(n,0) + C(n,1)x + C(n,2)x^2 + ... + C(n,n)x^n, где C(n,k) = n!/(k!(n-k)!). Классические примеры включают тождество Паскаля: C(n,k) = C(n-1,k-1) + C(n-1,k), и тождество суммы биномиальных коэффициентов: C(n,0) + C(n,1) + ... + C(n,n) = 2^n.
+
+Свойства комбинаторных тождеств часто основаны на симметрии (C(n,k) = C(n,n-k)) и рекуррентных соотношениях. Например, тождество Вандермонда: C(m+n,r) = sum_{k=0}^r C(m,k) * C(n,r-k) позволяет разбивать выборки из двух групп. Другой важный пример — тождество для суммы квадратов: sum_{k=0}^n [C(n,k)]^2 = C(2n,n), которое вытекает из комбинаторной интерпретации выбора n элементов из 2n.
+
+Эти тождества широко применяются в теории вероятностей, статистике, алгебре и дискретной математике для упрощения вычислений и доказательства других формул. Они тесно связаны с правилом суммы (сложение количества вариантов из непересекающихся множеств) и правилом произведения (умножение количества вариантов на каждом шаге). <a href="/cards/861.html" class="card-link">Факториал</a> n! используется в определениях C(n,k) и P(n,k) = n!/(n-k)!, а <a href="/cards/862.html" class="card-link">Двойной факториал</a> n!! встречается в тождествах для нечётных и чётных степеней. <a href="/cards/863.html" class="card-link">Перестановки</a> и комбинации служат базой для вывода многих тождеств, например, через подсчёт числа способов выбрать подмножества.
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>

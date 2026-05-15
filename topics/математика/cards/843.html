@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#843 — Радиус сходимости</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <article id="843" class="card-full">
+    <div class="card-id">карточка #843</div>
+<h1 class="card-title">1188</h1>
+
+<div class="breadcrumbs">
+  <span>Математический анализ</span> → <span>Ряды</span> → <span>1188</span>
+</div>
+
+<section type="pref">
+  <div class="section-title">preview</div>
+  <div class="pref-text">
+    <a href="/cards/393.html" class="card-link">Радиус</a> сходимости — это такое неотрицательное число R (возможно, бесконечность), что степенной ряд сходится при |x| < R и расходится при |x| > R.
+  </div>
+</section>
+
+<section type="link">
+  <div class="section-title">связанные темы</div>
+  <div class="links-list">
+    <a href="/cards/393.html" class="card-link">Радиус</a> <a href="/cards/432.html" class="card-link">Радиус вписанной окружности</a> <a href="/cards/433.html" class="card-link">Радиус описанной окружности</a> <a href="/cards/829.html" class="card-link">Числовые ряды</a> <a href="/cards/830.html" class="card-link">Частичная сумма</a>
+  </div>
+</section>
+
+<section type="main">
+  <div class="section-title">основной текст</div>
+  <div class="main-text">
+    <a href="/cards/393.html" class="card-link">Радиус</a> сходимости степенного ряда Σ a_n x^n определяется как число R, такое что ряд абсолютно сходится при |x| < R и расходится при |x| > R. На границе |x| = R сходимость требует отдельного исследования. Основная формула для нахождения R — формула Коши-Адамара: 1/R = lim sup √(|a_n|) (где √ — корень n-й степени). Альтернативно, если существует предел, можно использовать признак Даламбера: 1/R = lim |a_{n+1}/a_n|. Если предел равен нулю, то R = ∞; если бесконечности, то R = 0.
+
+Свойства радиуса сходимости: он не зависит от того, рассматриваем ли мы действительный или комплексный аргумент. Внутри интервала сходимости степенной ряд можно почленно дифференцировать и интегрировать, при этом радиус сходимости не меняется. Пример: для ряда Σ x^n/n! (экспонента) R = ∞; для геометрического ряда Σ x^n R = 1; для ряда Σ n! x^n R = 0. На границе интервала (при x = ±R) ряд может сходиться условно или расходиться — например, ряд Σ x^n/n при R = 1 сходится при x = -1 (условно) и расходится при x = 1.
+
+Радиус сходимости применяется в теории функций, разложении в ряды Тейлора и решении дифференциальных уравнений. Связанные темы: общее понятие "Радиус" как расстояние от центра до границы, но в отличие от геометрических радиусов (<a href="/cards/432.html" class="card-link">Радиус вписанной окружности</a>, <a href="/cards/433.html" class="card-link">Радиус описанной окружности</a>), радиус сходимости — аналитическая характеристика, определяющая область сходимости функционального ряда. Он также тесно связан с числовыми рядами (критерии сходимости) и частичной суммой (поведение суммы при приближении к границе сходимости).
+  </div>
+</section>
+
+<a href="/" class="back-link">← назад к графу</a>
+  </article>
+</body>
+</html>
